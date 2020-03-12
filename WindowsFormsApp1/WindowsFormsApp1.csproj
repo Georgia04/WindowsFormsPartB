@@ -52,6 +52,13 @@
     <Compile Include="DataEntryForm.Designer.cs">
       <DependentUpon>DataEntryForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GameUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameUI.Designer.cs">
+      <DependentUpon>GameUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPS_Game.cs" />
     <Compile Include="WelcomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +69,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DataEntryForm.resx">
       <DependentUpon>DataEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameUI.resx">
+      <DependentUpon>GameUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WelcomeForm.resx">
       <DependentUpon>WelcomeForm.cs</DependentUpon>
@@ -87,6 +97,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="bin\Debug\Paper.jpg" />
+    <Content Include="bin\Debug\Scissors.jpg" />
+    <Content Include="bin\Debug\Stone.jpg" />
+    <Content Include="Images\Paper.jpg" />
+    <Content Include="Images\Scissors.jpg" />
+    <Content Include="Images\Stone.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
