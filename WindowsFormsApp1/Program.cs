@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.WelcomeForm
 
 namespace WindowsFormsApp1
 {
@@ -16,7 +17,9 @@ namespace WindowsFormsApp1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
             Application.Run(new GameUI());
+            Application.Run(new WelcomeForm());
         }
     }
 }
