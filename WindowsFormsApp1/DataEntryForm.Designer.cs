@@ -29,30 +29,133 @@
         private void InitializeComponent()
         {
             this.mainForm = new System.Windows.Forms.Label();
+            this.quitButton = new System.Windows.Forms.Button();
+            this.firstnameLabel = new System.Windows.Forms.Label();
+            this.surnamenameLabel = new System.Windows.Forms.Label();
+            this.messageLabel = new System.Windows.Forms.Label();
+            this.firstnameBox = new System.Windows.Forms.TextBox();
+            this.surnameBox = new System.Windows.Forms.TextBox();
+            this.clearButton = new System.Windows.Forms.Button();
+            this.messageButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // mainForm
             // 
             this.mainForm.AutoSize = true;
-            this.mainForm.BackColor = System.Drawing.Color.Red;
+            this.mainForm.BackColor = System.Drawing.Color.Yellow;
             this.mainForm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.mainForm.Location = new System.Drawing.Point(167, 27);
+            this.mainForm.Location = new System.Drawing.Point(196, 9);
             this.mainForm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mainForm.Name = "mainForm";
             this.mainForm.Size = new System.Drawing.Size(620, 47);
             this.mainForm.TabIndex = 0;
             this.mainForm.Text = "Georgia\'s Details Data Entry Form";
+            this.mainForm.Click += new System.EventHandler(this.mainForm_Click);
+            // 
+            // quitButton
+            // 
+            this.quitButton.Location = new System.Drawing.Point(743, 276);
+            this.quitButton.Name = "quitButton";
+            this.quitButton.Size = new System.Drawing.Size(216, 53);
+            this.quitButton.TabIndex = 1;
+            this.quitButton.Text = "Quit";
+            this.quitButton.UseVisualStyleBackColor = true;
+            this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
+            // 
+            // firstnameLabel
+            // 
+            this.firstnameLabel.AutoSize = true;
+            this.firstnameLabel.Font = new System.Drawing.Font("Arial", 14F);
+            this.firstnameLabel.Location = new System.Drawing.Point(235, 80);
+            this.firstnameLabel.Name = "firstnameLabel";
+            this.firstnameLabel.Size = new System.Drawing.Size(129, 27);
+            this.firstnameLabel.TabIndex = 2;
+            this.firstnameLabel.Text = "First Name";
+            this.firstnameLabel.Click += new System.EventHandler(this.firstnameLabel_Click);
+            // 
+            // surnamenameLabel
+            // 
+            this.surnamenameLabel.AutoSize = true;
+            this.surnamenameLabel.Font = new System.Drawing.Font("Arial", 14F);
+            this.surnamenameLabel.Location = new System.Drawing.Point(235, 135);
+            this.surnamenameLabel.Name = "surnamenameLabel";
+            this.surnamenameLabel.Size = new System.Drawing.Size(110, 27);
+            this.surnamenameLabel.TabIndex = 3;
+            this.surnamenameLabel.Text = "Surname";
+            this.surnamenameLabel.Click += new System.EventHandler(this.surnameLabel_Click);
+            // 
+            // messageLabel
+            // 
+            this.messageLabel.AutoSize = true;
+            this.messageLabel.BackColor = System.Drawing.Color.Yellow;
+            this.messageLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.messageLabel.Font = new System.Drawing.Font("Arial", 14F);
+            this.messageLabel.Location = new System.Drawing.Point(400, 198);
+            this.messageLabel.Name = "messageLabel";
+            this.messageLabel.Size = new System.Drawing.Size(110, 29);
+            this.messageLabel.TabIndex = 4;
+            this.messageLabel.Text = "Message";
+            // 
+            // firstnameBox
+            // 
+            this.firstnameBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.firstnameBox.Font = new System.Drawing.Font("Arial", 14F);
+            this.firstnameBox.Location = new System.Drawing.Point(438, 80);
+            this.firstnameBox.Name = "firstnameBox";
+            this.firstnameBox.Size = new System.Drawing.Size(235, 34);
+            this.firstnameBox.TabIndex = 5;
+            this.firstnameBox.TextChanged += new System.EventHandler(this.firstnameBox_TextChanged);
+            // 
+            // surnameBox
+            // 
+            this.surnameBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.surnameBox.Font = new System.Drawing.Font("Arial", 14F);
+            this.surnameBox.Location = new System.Drawing.Point(438, 135);
+            this.surnameBox.Name = "surnameBox";
+            this.surnameBox.Size = new System.Drawing.Size(235, 34);
+            this.surnameBox.TabIndex = 6;
+            this.surnameBox.TextChanged += new System.EventHandler(this.surnameBox_TextChanged);
+            // 
+            // clearButton
+            // 
+            this.clearButton.Location = new System.Drawing.Point(292, 276);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(166, 55);
+            this.clearButton.TabIndex = 7;
+            this.clearButton.Text = "Clear ";
+            this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+            // 
+            // messageButton
+            // 
+            this.messageButton.AutoSize = true;
+            this.messageButton.Location = new System.Drawing.Point(50, 276);
+            this.messageButton.Name = "messageButton";
+            this.messageButton.Size = new System.Drawing.Size(189, 55);
+            this.messageButton.TabIndex = 8;
+            this.messageButton.Text = "Message";
+            this.messageButton.UseVisualStyleBackColor = true;
+            this.messageButton.Click += new System.EventHandler(this.messageButton_Click);
             // 
             // DataEntryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(23F, 45F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1173, 563);
+            this.ClientSize = new System.Drawing.Size(1019, 520);
+            this.Controls.Add(this.messageButton);
+            this.Controls.Add(this.clearButton);
+            this.Controls.Add(this.surnameBox);
+            this.Controls.Add(this.firstnameBox);
+            this.Controls.Add(this.messageLabel);
+            this.Controls.Add(this.surnamenameLabel);
+            this.Controls.Add(this.firstnameLabel);
+            this.Controls.Add(this.quitButton);
             this.Controls.Add(this.mainForm);
             this.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.Margin = new System.Windows.Forms.Padding(9);
             this.Name = "DataEntryForm";
-            this.Text = "Georgia Data Entry Form";
+            this.Text = " ";
+            this.Load += new System.EventHandler(this.DataEntryForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -61,5 +164,13 @@
         #endregion
 
         private System.Windows.Forms.Label mainForm;
+        private System.Windows.Forms.Button quitButton;
+        private System.Windows.Forms.Label firstnameLabel;
+        private System.Windows.Forms.Label surnamenameLabel;
+        private System.Windows.Forms.Label messageLabel;
+        private System.Windows.Forms.TextBox firstnameBox;
+        private System.Windows.Forms.TextBox surnameBox;
+        private System.Windows.Forms.Button clearButton;
+        private System.Windows.Forms.Button messageButton;
     }
 }

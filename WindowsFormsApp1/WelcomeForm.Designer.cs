@@ -63,6 +63,7 @@
             this.bragLabel.TabIndex = 1;
             this.bragLabel.Text = "The Best Prices";
             this.bragLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bragLabel.Click += new System.EventHandler(this.bragLabel_Click);
             // 
             // quitButton
             // 
@@ -107,10 +108,11 @@
             this.Controls.Add(this.greetingLabel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "WelcomeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Georgia Welcome Form";
+            this.Load += new System.EventHandler(this.WelcomeForm_Load);
             this.ResumeLayout(false);
 
         }
