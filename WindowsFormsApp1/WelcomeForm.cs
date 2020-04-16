@@ -6,7 +6,7 @@ using System.Windows.Forms;
 namespace WindowsFormsApp1
 {
     /// <summary>
-    /// This task shows a welcome message and which is the best computer
+    /// This form shows a greeting message and which is the best computer
     /// and best software
     /// Author: Georgia
     /// </summary>
