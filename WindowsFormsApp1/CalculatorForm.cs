@@ -43,6 +43,7 @@ namespace WindowsFormsApp1
         private void quitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
+            
         }
 
         private void addButton_Click(object sender, EventArgs e)
@@ -88,6 +89,29 @@ namespace WindowsFormsApp1
             }
         }
 
-        
+        private void powerButton_Click(object sender, EventArgs e)
+        {
+            Double number1, number2, result;
+            number1 = Convert.ToDouble(firstnumBox.Text);
+            number2 = Convert.ToDouble(secnumBox.Text);
+            result = Math.Pow(number1, number2);
+            numresultLabel.Text = result.ToString();
+        }
+
+        private void averageButton_Click(object sender, EventArgs e)
+        {
+            Double number1, number2, result;
+            number1 = Convert.ToDouble(firstnumBox.Text);
+            number2 = Convert.ToDouble(secnumBox.Text);
+            result = (number1 + number2) / 2;
+            numresultLabel.Text = result.ToString();
+        }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            firstnumBox.Text = "";
+            secnumBox.Text = "";
+            numresultLabel.Text = "";
+        }
     }
 }
