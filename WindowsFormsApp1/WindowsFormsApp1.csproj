@@ -65,6 +65,12 @@
       <DependentUpon>GameUI.cs</DependentUpon>
     </Compile>
     <Compile Include="RPS_Game.cs" />
+    <Compile Include="Splash Screen Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash Screen Form.Designer.cs">
+      <DependentUpon>Splash Screen Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="WelcomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
