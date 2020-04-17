@@ -23,6 +23,7 @@ namespace WindowsFormsApp1
             //Application.Run(new WelcomeForm());
             //Application.Run(new DataEntryForm());
             Application.Run(new CalculatorForm());
+            Application.Run(new splashscreenForm());
         }
     }
 }

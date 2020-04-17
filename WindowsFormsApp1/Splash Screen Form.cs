@@ -10,11 +10,25 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Splash_Screen_Form : Form
+    /// <summary>
+    /// This image introduces the application
+    /// author:Georgia
+    /// </summary>
+    public partial class splashscreenForm : Form
     {
-        public Splash_Screen_Form()
+        public splashscreenForm()
         {
             InitializeComponent();
+        }
+
+        private void clickCalculator_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void splashscreenForm_Load(object sender, EventArgs e)
+        {
+           
         }
     }
 }

@@ -29,7 +29,10 @@ namespace WindowsFormsApp1
 
         private void CalculatorForm_Load_1(object sender, EventArgs e)
         {
-
+            splashscreenForm splashscreenForm = new splashscreenForm();
+            splashscreenForm.ShowDialog();
+            System.Threading.Thread.Sleep(2000);
+            splashscreenForm.Close();
         }
 
         private void resultLabel_Click(object sender, EventArgs e)
