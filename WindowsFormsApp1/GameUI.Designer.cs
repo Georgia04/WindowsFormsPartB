@@ -182,6 +182,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "GameUI";
             this.Text = "Georgia\'s Rock-Paper-Scissors Game";
+            this.Load += new System.EventHandler(this.GameUI_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).EndInit();

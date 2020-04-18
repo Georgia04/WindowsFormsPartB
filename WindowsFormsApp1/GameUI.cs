@@ -11,6 +11,11 @@ using WindowsFormsApp1;
 
 namespace WindowsFormsApp1
 {
+    /// <summary>
+    /// This class forms a class interface 
+    /// for the RPS Game.
+    /// author: Georgia
+    /// </summary>
     public partial class GameUI : Form
     {
         RPS_Game game = new RPS_Game();
@@ -67,12 +72,8 @@ namespace WindowsFormsApp1
             ShowComputerChoice();
             game.WorkoutWinner();
             ShowResults();
-
-
-
-
-
         }
+
         private void ShowResults() 
         {
             game.WorkoutWinner();
@@ -81,7 +82,6 @@ namespace WindowsFormsApp1
             int computerscore = game.ComputerScore;
             resultLabel.Text = resultLabel.Text + "\nPlayer Score = " + playerscore;
             resultLabel.Text = resultLabel.Text + "\nComputer Score = " + computerscore;
-
         }
 
         private void ShowComputerChoice() 
@@ -102,5 +102,9 @@ namespace WindowsFormsApp1
             }
         }
 
+        private void GameUI_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
