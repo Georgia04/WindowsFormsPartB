@@ -162,6 +162,7 @@
             // 
             // quitForm
             // 
+            this.quitForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.quitForm.Location = new System.Drawing.Point(610, 386);
             this.quitForm.Name = "quitForm";
             this.quitForm.Size = new System.Drawing.Size(112, 48);
