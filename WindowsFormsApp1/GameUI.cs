@@ -104,7 +104,10 @@ namespace WindowsFormsApp1
 
         private void GameUI_Load(object sender, EventArgs e)
         {
-
+            RPSsplashscreenForm RPSsplashscreen = new RPSsplashscreenForm();
+            RPSsplashscreen.ShowDialog();
+            System.Threading.Thread.Sleep(2000);
+            RPSsplashscreen.Close();
         }
     }
 }
