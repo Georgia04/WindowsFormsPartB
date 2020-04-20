@@ -31,7 +31,7 @@ namespace WindowsFormsApp1
 
         }
 
-        private void LoadScissorsImage(object sender, EventArgs e)
+        private void loadScissorsImage(object sender, EventArgs e)
         {
             userPictureBox.Image = Image.FromFile("Scissors.jpg");
         }
@@ -51,7 +51,7 @@ namespace WindowsFormsApp1
             userPictureBox.Image = Image.FromFile("Stone.jpg");
         }
 
-        private void GetComputerChoice(object sender, EventArgs e)
+        private void getComputerChoice(object sender, EventArgs e)
         {
             if (scissorsRadioButton.Checked)
             {
@@ -69,12 +69,12 @@ namespace WindowsFormsApp1
             }
 
             game.GetComputerChoice();
-            ShowComputerChoice();
+            showComputerChoice();
             game.WorkoutWinner();
-            ShowResults();
+            showResults();
         }
 
-        private void ShowResults() 
+        private void showResults() 
         {
             game.WorkoutWinner();
             resultLabel.Text = "winner = " + game.WinnerName;
@@ -84,7 +84,7 @@ namespace WindowsFormsApp1
             resultLabel.Text = resultLabel.Text + "\nComputer Score = " + computerscore;
         }
 
-        private void ShowComputerChoice() 
+        private void showComputerChoice() 
         {
             if (game.ComputerChoice == RPS_Choices.ROCK)
             {
@@ -102,7 +102,7 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void GameUI_Load(object sender, EventArgs e)
+        private void gameUI_Load(object sender, EventArgs e)
         {
             RPSsplashscreenForm RPSsplashscreen = new RPSsplashscreenForm();
             RPSsplashscreen.ShowDialog();

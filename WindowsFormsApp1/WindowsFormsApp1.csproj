@@ -52,11 +52,11 @@
     <Compile Include="CalculatorForm.Designer.cs">
       <DependentUpon>CalculatorForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Close Form.cs">
+    <Compile Include="CloseForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Close Form.Designer.cs">
-      <DependentUpon>Close Form.cs</DependentUpon>
+    <Compile Include="CloseForm.Designer.cs">
+      <DependentUpon>CloseForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DataEntryForm.cs">
       <SubType>Form</SubType>
@@ -70,18 +70,18 @@
     <Compile Include="GameUI.Designer.cs">
       <DependentUpon>GameUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="RPS Splash Screen.cs">
+    <Compile Include="RPSSplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RPS Splash Screen.Designer.cs">
-      <DependentUpon>RPS Splash Screen.cs</DependentUpon>
+    <Compile Include="RPSSplashScreen.Designer.cs">
+      <DependentUpon>RPSSplashScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="RPS_Game.cs" />
-    <Compile Include="Calculator Splash Screen Form.cs">
+    <Compile Include="CalculatorSplashScreenForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Calculator Splash Screen Form.Designer.cs">
-      <DependentUpon>Calculator Splash Screen Form.cs</DependentUpon>
+    <Compile Include="CalculatorSplashScreenForm.Designer.cs">
+      <DependentUpon>CalculatorSplashScreenForm.cs</DependentUpon>
     </Compile>
     <Compile Include="WelcomeForm.cs">
       <SubType>Form</SubType>
@@ -94,8 +94,8 @@
     <EmbeddedResource Include="CalculatorForm.resx">
       <DependentUpon>CalculatorForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Close Form.resx">
-      <DependentUpon>Close Form.cs</DependentUpon>
+    <EmbeddedResource Include="CloseForm.resx">
+      <DependentUpon>CloseForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DataEntryForm.resx">
       <DependentUpon>DataEntryForm.cs</DependentUpon>
@@ -103,11 +103,11 @@
     <EmbeddedResource Include="GameUI.resx">
       <DependentUpon>GameUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Calculator Splash Screen Form.resx">
-      <DependentUpon>Calculator Splash Screen Form.cs</DependentUpon>
+    <EmbeddedResource Include="CalculatorSplashScreenForm.resx">
+      <DependentUpon>CalculatorSplashScreenForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RPS Splash Screen.resx">
-      <DependentUpon>RPS Splash Screen.cs</DependentUpon>
+    <EmbeddedResource Include="RPSSplashScreen.resx">
+      <DependentUpon>RPSSplashScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WelcomeForm.resx">
       <DependentUpon>WelcomeForm.cs</DependentUpon>

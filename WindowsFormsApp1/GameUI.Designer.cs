@@ -106,7 +106,7 @@
             this.scissorsRadioButton.TabStop = true;
             this.scissorsRadioButton.Text = "Scissors";
             this.scissorsRadioButton.UseVisualStyleBackColor = false;
-            this.scissorsRadioButton.CheckedChanged += new System.EventHandler(this.LoadScissorsImage);
+            this.scissorsRadioButton.CheckedChanged += new System.EventHandler(this.loadScissorsImage);
             // 
             // groupBox2
             // 
@@ -128,7 +128,7 @@
             this.playForm.TabIndex = 1;
             this.playForm.Text = "Play";
             this.playForm.UseVisualStyleBackColor = true;
-            this.playForm.Click += new System.EventHandler(this.GetComputerChoice);
+            this.playForm.Click += new System.EventHandler(this.getComputerChoice);
             // 
             // computerPictureBox
             // 
@@ -183,7 +183,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "GameUI";
             this.Text = "Georgia\'s Rock-Paper-Scissors Game";
-            this.Load += new System.EventHandler(this.GameUI_Load);
+            this.Load += new System.EventHandler(this.gameUI_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).EndInit();

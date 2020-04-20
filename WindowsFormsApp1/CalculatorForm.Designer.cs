@@ -35,10 +35,10 @@
             this.secnumLabel = new System.Windows.Forms.Label();
             this.resultLabel = new System.Windows.Forms.Label();
             this.numresultLabel = new System.Windows.Forms.Label();
-            this.addButton = new System.Windows.Forms.Button();
-            this.substractButton = new System.Windows.Forms.Button();
-            this.multiplyButton = new System.Windows.Forms.Button();
-            this.divideButton = new System.Windows.Forms.Button();
+            this.addForm = new System.Windows.Forms.Button();
+            this.substractForm = new System.Windows.Forms.Button();
+            this.multiplyForm = new System.Windows.Forms.Button();
+            this.divideForm = new System.Windows.Forms.Button();
             this.quitButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -113,49 +113,49 @@
             this.numresultLabel.Size = new System.Drawing.Size(100, 46);
             this.numresultLabel.TabIndex = 6;
             // 
-            // addButton
+            // addForm
             // 
-            this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.addButton.Location = new System.Drawing.Point(779, 125);
-            this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(138, 42);
-            this.addButton.TabIndex = 7;
-            this.addButton.Text = "Add";
-            this.addButton.UseVisualStyleBackColor = true;
-            this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            this.addForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.addForm.Location = new System.Drawing.Point(779, 125);
+            this.addForm.Name = "addForm";
+            this.addForm.Size = new System.Drawing.Size(138, 42);
+            this.addForm.TabIndex = 7;
+            this.addForm.Text = "Add";
+            this.addForm.UseVisualStyleBackColor = true;
+            this.addForm.Click += new System.EventHandler(this.addNumbers);
             // 
-            // substractButton
+            // substractForm
             // 
-            this.substractButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.substractButton.Location = new System.Drawing.Point(779, 196);
-            this.substractButton.Name = "substractButton";
-            this.substractButton.Size = new System.Drawing.Size(138, 45);
-            this.substractButton.TabIndex = 8;
-            this.substractButton.Text = "Substract";
-            this.substractButton.UseVisualStyleBackColor = true;
-            this.substractButton.Click += new System.EventHandler(this.substractButton_Click);
+            this.substractForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.substractForm.Location = new System.Drawing.Point(779, 196);
+            this.substractForm.Name = "substractForm";
+            this.substractForm.Size = new System.Drawing.Size(138, 45);
+            this.substractForm.TabIndex = 8;
+            this.substractForm.Text = "Substract";
+            this.substractForm.UseVisualStyleBackColor = true;
+            this.substractForm.Click += new System.EventHandler(this.substractNumbers);
             // 
-            // multiplyButton
+            // multiplyForm
             // 
-            this.multiplyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.multiplyButton.Location = new System.Drawing.Point(779, 262);
-            this.multiplyButton.Name = "multiplyButton";
-            this.multiplyButton.Size = new System.Drawing.Size(138, 41);
-            this.multiplyButton.TabIndex = 9;
-            this.multiplyButton.Text = "Multiply";
-            this.multiplyButton.UseVisualStyleBackColor = true;
-            this.multiplyButton.Click += new System.EventHandler(this.multiplyButton_Click);
+            this.multiplyForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.multiplyForm.Location = new System.Drawing.Point(779, 262);
+            this.multiplyForm.Name = "multiplyForm";
+            this.multiplyForm.Size = new System.Drawing.Size(138, 41);
+            this.multiplyForm.TabIndex = 9;
+            this.multiplyForm.Text = "Multiply";
+            this.multiplyForm.UseVisualStyleBackColor = true;
+            this.multiplyForm.Click += new System.EventHandler(this.multiplyNumbers);
             // 
-            // divideButton
+            // divideForm
             // 
-            this.divideButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.divideButton.Location = new System.Drawing.Point(779, 326);
-            this.divideButton.Name = "divideButton";
-            this.divideButton.Size = new System.Drawing.Size(138, 41);
-            this.divideButton.TabIndex = 10;
-            this.divideButton.Text = "Divide";
-            this.divideButton.UseVisualStyleBackColor = true;
-            this.divideButton.Click += new System.EventHandler(this.divideButton_Click);
+            this.divideForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.divideForm.Location = new System.Drawing.Point(779, 326);
+            this.divideForm.Name = "divideForm";
+            this.divideForm.Size = new System.Drawing.Size(138, 41);
+            this.divideForm.TabIndex = 10;
+            this.divideForm.Text = "Divide";
+            this.divideForm.UseVisualStyleBackColor = true;
+            this.divideForm.Click += new System.EventHandler(this.divideNumbers);
             // 
             // quitButton
             // 
@@ -166,7 +166,6 @@
             this.quitButton.TabIndex = 11;
             this.quitButton.Text = "Quit";
             this.quitButton.UseVisualStyleBackColor = true;
-            this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
             // 
             // panel1
             // 
@@ -193,7 +192,7 @@
             this.powerButton.TabIndex = 11;
             this.powerButton.Text = "Power";
             this.powerButton.UseVisualStyleBackColor = true;
-            this.powerButton.Click += new System.EventHandler(this.powerButton_Click);
+            this.powerButton.Click += new System.EventHandler(this.powerForm);
             // 
             // averageButton
             // 
@@ -204,7 +203,7 @@
             this.averageButton.TabIndex = 11;
             this.averageButton.Text = "Average";
             this.averageButton.UseVisualStyleBackColor = true;
-            this.averageButton.Click += new System.EventHandler(this.averageButton_Click);
+            this.averageButton.Click += new System.EventHandler(this.averageForm);
             // 
             // clearButton
             // 
@@ -215,7 +214,7 @@
             this.clearButton.TabIndex = 11;
             this.clearButton.Text = "Clear";
             this.clearButton.UseVisualStyleBackColor = true;
-            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+            this.clearButton.Click += new System.EventHandler(this.clearForm);
             // 
             // CalculatorForm
             // 
@@ -229,10 +228,10 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.quitButton);
-            this.Controls.Add(this.divideButton);
-            this.Controls.Add(this.multiplyButton);
-            this.Controls.Add(this.substractButton);
-            this.Controls.Add(this.addButton);
+            this.Controls.Add(this.divideForm);
+            this.Controls.Add(this.multiplyForm);
+            this.Controls.Add(this.substractForm);
+            this.Controls.Add(this.addForm);
             this.Controls.Add(this.numresultLabel);
             this.Controls.Add(this.resultLabel);
             this.Controls.Add(this.secnumLabel);
@@ -258,10 +257,10 @@
         private System.Windows.Forms.Label secnumLabel;
         private System.Windows.Forms.Label resultLabel;
         private System.Windows.Forms.Label numresultLabel;
-        private System.Windows.Forms.Button addButton;
-        private System.Windows.Forms.Button substractButton;
-        private System.Windows.Forms.Button multiplyButton;
-        private System.Windows.Forms.Button divideButton;
+        private System.Windows.Forms.Button addForm;
+        private System.Windows.Forms.Button substractForm;
+        private System.Windows.Forms.Button multiplyForm;
+        private System.Windows.Forms.Button divideForm;
         private System.Windows.Forms.Button quitButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;

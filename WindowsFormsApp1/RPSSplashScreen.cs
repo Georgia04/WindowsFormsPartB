@@ -10,6 +10,10 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
+    /// <summary>
+    /// This image introduce the application
+    /// author: Georgia
+    /// </summary>
     public partial class RPSsplashscreenForm : Form
     {
         public RPSsplashscreenForm()

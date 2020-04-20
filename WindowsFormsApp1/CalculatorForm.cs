@@ -22,12 +22,12 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void CalculatorForm_Load(object sender, EventArgs e)
+        private void calculatorForm_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void CalculatorForm_Load_1(object sender, EventArgs e)
+        private void calculatorForm_Load_1(object sender, EventArgs e)
         {
             splashscreenForm splashscreenForm = new splashscreenForm();
             splashscreenForm.ShowDialog();
@@ -40,7 +40,7 @@ namespace WindowsFormsApp1
 
         }
 
-        private void quitButton_Click(object sender, EventArgs e)
+        private void quitForm(object sender, EventArgs e)
         {
             closeScreen closeButton= new closeScreen ();
             closeButton.ShowDialog();
@@ -49,7 +49,7 @@ namespace WindowsFormsApp1
             
         }
 
-        private void addButton_Click(object sender, EventArgs e)
+        private void addNumbers(object sender, EventArgs e)
         {
             Double number1, number2, result;
             number1 = Convert.ToDouble(firstnumBox.Text);
@@ -58,7 +58,7 @@ namespace WindowsFormsApp1
             numresultLabel.Text = result.ToString();
         }
 
-        private void substractButton_Click(object sender, EventArgs e)
+        private void substractNumbers(object sender, EventArgs e)
         {
             Double number1, number2, result;
             number1 = Convert.ToDouble(firstnumBox.Text);
@@ -67,7 +67,7 @@ namespace WindowsFormsApp1
             numresultLabel.Text = result.ToString();
         }
 
-        private void multiplyButton_Click(object sender, EventArgs e)
+        private void multiplyNumbers(object sender, EventArgs e)
         {
             Double number1, number2, result;
             number1 = Convert.ToDouble(firstnumBox.Text);
@@ -76,7 +76,7 @@ namespace WindowsFormsApp1
             numresultLabel.Text = result.ToString();
         }
 
-        private void divideButton_Click(object sender, EventArgs e)
+        private void divideNumbers(object sender, EventArgs e)
         {
             Double number1, number2, result;
             number1 = Convert.ToDouble(firstnumBox.Text);
@@ -92,7 +92,7 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void powerButton_Click(object sender, EventArgs e)
+        private void powerForm(object sender, EventArgs e)
         {
             Double number1, number2, result;
             number1 = Convert.ToDouble(firstnumBox.Text);
@@ -101,7 +101,7 @@ namespace WindowsFormsApp1
             numresultLabel.Text = result.ToString();
         }
 
-        private void averageButton_Click(object sender, EventArgs e)
+        private void averageForm(object sender, EventArgs e)
         {
             Double number1, number2, result;
             number1 = Convert.ToDouble(firstnumBox.Text);
@@ -110,7 +110,7 @@ namespace WindowsFormsApp1
             numresultLabel.Text = result.ToString();
         }
 
-        private void clearButton_Click(object sender, EventArgs e)
+        private void clearForm(object sender, EventArgs e)
         {
             firstnumBox.Text = "";
             secnumBox.Text = "";
