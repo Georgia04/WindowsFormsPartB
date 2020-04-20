@@ -8,8 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1.Unit_3
+namespace WindowsFormsApp1
 {
+    /// <summary>
+    /// This class converts UK pounds into 
+    /// euros, dollars or rupees amount
+    /// author: Georgia
+    /// </summary>
     public partial class CurrencyconverterForm : Form
     {
         public CurrencyconverterForm()
@@ -25,23 +30,37 @@ namespace WindowsFormsApp1.Unit_3
         private void radioDollars_CheckedChanged(object sender, EventArgs e)
         {
             double amount;
-            amount = Convert.ToDouble(UKPounds.Text) * 1.8;
+            amount = Convert.ToDouble(UKPounds.Text) * 1.6;
             convertAmount.Text = amount.ToString() + " Dollars";
-
         }
 
         private void radioEuros_CheckedChanged(object sender, EventArgs e)
         {
             double amount;
-            amount = Convert.ToDouble(UKPounds.Text) * 1.4;
+            amount = Convert.ToDouble(UKPounds.Text) * 1.9;
             convertAmount.Text = amount.ToString() + " Euros";
         }
 
         private void radioRupees_CheckedChanged(object sender, EventArgs e)
         {
             double amount;
-            amount = Convert.ToDouble(UKPounds.Text) * 1.4;
-            convertAmount.Text = amount.ToString() + " Euros";
+            amount = Convert.ToDouble(UKPounds.Text) * 60;
+            convertAmount.Text = amount.ToString() + " Rupees";
+        }
+
+        private void quitForm(object sender, EventArgs e)
+        {
+            DialogResult resultMessage = MessageBox.Show("Are you sure?", "Confirmation", MessageBoxButtons.YesNo);
+            if (resultMessage == DialogResult.Yes)
+            {
+                Application.ExitThread();
+            }
+            else
+            {
+                MessageBox.Show("Cancelled");
+
+            }
+
         }
     }
 }

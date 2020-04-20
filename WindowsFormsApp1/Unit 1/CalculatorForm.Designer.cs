@@ -54,6 +54,7 @@
             this.firstnumBox.Name = "firstnumBox";
             this.firstnumBox.Size = new System.Drawing.Size(100, 53);
             this.firstnumBox.TabIndex = 0;
+            this.firstnumBox.Text = "1";
             // 
             // secnumBox
             // 
