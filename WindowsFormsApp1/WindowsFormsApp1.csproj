@@ -46,70 +46,70 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalculatorForm.cs">
+    <Compile Include="Unit 1\CalculatorForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CalculatorForm.Designer.cs">
+    <Compile Include="Unit 1\CalculatorForm.Designer.cs">
       <DependentUpon>CalculatorForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CloseForm.cs">
+    <Compile Include="Unit 1\CloseForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CloseForm.Designer.cs">
+    <Compile Include="Unit 1\CloseForm.Designer.cs">
       <DependentUpon>CloseForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataEntryForm.cs">
+    <Compile Include="Unit 1\DataEntryForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DataEntryForm.Designer.cs">
+    <Compile Include="Unit 1\DataEntryForm.Designer.cs">
       <DependentUpon>DataEntryForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="GameUI.cs">
+    <Compile Include="Unit 2\GameUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GameUI.Designer.cs">
+    <Compile Include="Unit 2\GameUI.Designer.cs">
       <DependentUpon>GameUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="RPSSplashScreen.cs">
+    <Compile Include="Unit 2\RPSSplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RPSSplashScreen.Designer.cs">
+    <Compile Include="Unit 2\RPSSplashScreen.Designer.cs">
       <DependentUpon>RPSSplashScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="RPS_Game.cs" />
-    <Compile Include="CalculatorSplashScreenForm.cs">
+    <Compile Include="Unit 2\RPS_Game.cs" />
+    <Compile Include="Unit 1\CalculatorSplashScreenForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CalculatorSplashScreenForm.Designer.cs">
+    <Compile Include="Unit 1\CalculatorSplashScreenForm.Designer.cs">
       <DependentUpon>CalculatorSplashScreenForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="WelcomeForm.cs">
+    <Compile Include="Unit 1\WelcomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WelcomeForm.Designer.cs">
+    <Compile Include="Unit 1\WelcomeForm.Designer.cs">
       <DependentUpon>WelcomeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CalculatorForm.resx">
+    <EmbeddedResource Include="Unit 1\CalculatorForm.resx">
       <DependentUpon>CalculatorForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CloseForm.resx">
+    <EmbeddedResource Include="Unit 1\CloseForm.resx">
       <DependentUpon>CloseForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DataEntryForm.resx">
+    <EmbeddedResource Include="Unit 1\DataEntryForm.resx">
       <DependentUpon>DataEntryForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GameUI.resx">
+    <EmbeddedResource Include="Unit 2\GameUI.resx">
       <DependentUpon>GameUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CalculatorSplashScreenForm.resx">
+    <EmbeddedResource Include="Unit 1\CalculatorSplashScreenForm.resx">
       <DependentUpon>CalculatorSplashScreenForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RPSSplashScreen.resx">
+    <EmbeddedResource Include="Unit 2\RPSSplashScreen.resx">
       <DependentUpon>RPSSplashScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WelcomeForm.resx">
+    <EmbeddedResource Include="Unit 1\WelcomeForm.resx">
       <DependentUpon>WelcomeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
