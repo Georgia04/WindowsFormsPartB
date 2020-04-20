@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class PoshNoshForn : Form
+    public partial class PoshNoshForm : Form
     {
-        public PoshNoshForn()
+        public PoshNoshForm()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class PoshNoshForn
+    partial class PoshNoshForm
     {
         /// <summary>
         /// Required designer variable.

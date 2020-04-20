@@ -58,11 +58,11 @@
     <Compile Include="PizzaShopForm.Designer.cs">
       <DependentUpon>PizzaShopForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PoshNoshForn.cs">
+    <Compile Include="PoshNoshForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PoshNoshForn.Designer.cs">
-      <DependentUpon>PoshNoshForn.cs</DependentUpon>
+    <Compile Include="PoshNoshForm.Designer.cs">
+      <DependentUpon>PoshNoshForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Unit 1\CalculatorForm.cs">
       <SubType>Form</SubType>
@@ -115,8 +115,8 @@
     <EmbeddedResource Include="PizzaShopForm.resx">
       <DependentUpon>PizzaShopForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PoshNoshForn.resx">
-      <DependentUpon>PoshNoshForn.cs</DependentUpon>
+    <EmbeddedResource Include="PoshNoshForm.resx">
+      <DependentUpon>PoshNoshForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Unit 1\CalculatorForm.resx">
       <DependentUpon>CalculatorForm.cs</DependentUpon>
