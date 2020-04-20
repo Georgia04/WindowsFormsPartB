@@ -52,6 +52,18 @@
     <Compile Include="CurrencyConverterForm.Designer.cs">
       <DependentUpon>CurrencyConverterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PizzaShopForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PizzaShopForm.Designer.cs">
+      <DependentUpon>PizzaShopForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PoshNoshForn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PoshNoshForn.Designer.cs">
+      <DependentUpon>PoshNoshForn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Unit 1\CalculatorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +111,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CurrencyConverterForm.resx">
       <DependentUpon>CurrencyConverterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PizzaShopForm.resx">
+      <DependentUpon>PizzaShopForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoshNoshForn.resx">
+      <DependentUpon>PoshNoshForn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Unit 1\CalculatorForm.resx">
       <DependentUpon>CalculatorForm.cs</DependentUpon>

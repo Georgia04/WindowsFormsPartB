@@ -24,7 +24,8 @@ namespace WindowsFormsApp1
             //Application.Run(new DataEntryForm());
             //Application.Run(new CalculatorForm());
             //Application.Run(new splashscreenForm());
-            Application.Run(new CurrencyconverterForm());
+            //Application.Run(new CurrencyconverterForm());
+            //Application.Run(new PizzaShopForm());
         }
     }
 }
