@@ -21,7 +21,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void RPS_Splash_Screen_Load(object sender, EventArgs e)
+        private void rPS_Splash_Screen_Load(object sender, EventArgs e)
         {
 
         }
@@ -31,7 +31,7 @@ namespace WindowsFormsApp1
             this.Close();
         }
 
-        private void RSPsplashscreenForm_Click(object sender, EventArgs e)
+        private void rSPsplashscreenForm_Click(object sender, EventArgs e)
         {
             this.Close();
         }

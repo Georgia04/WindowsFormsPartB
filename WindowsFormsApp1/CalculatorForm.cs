@@ -29,7 +29,7 @@ namespace WindowsFormsApp1
 
         private void calculatorForm_Load_1(object sender, EventArgs e)
         {
-            splashscreenForm splashscreenForm = new splashscreenForm();
+            SplashscreenForm splashscreenForm = new SplashscreenForm();
             splashscreenForm.ShowDialog();
             System.Threading.Thread.Sleep(2000);
             splashscreenForm.Close();
@@ -42,7 +42,7 @@ namespace WindowsFormsApp1
 
         private void quitForm(object sender, EventArgs e)
         {
-            closeScreen closeButton= new closeScreen ();
+            CloseScreen closeButton= new CloseScreen ();
             closeButton.ShowDialog();
             closeButton.Close();
             Application.Exit();

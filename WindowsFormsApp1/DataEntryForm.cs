@@ -22,12 +22,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void DataEntryForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void mainForm_Click(object sender, EventArgs e)
+        private void dataEntryForm_Load(object sender, EventArgs e)
         {
 
         }
@@ -60,26 +55,6 @@ namespace WindowsFormsApp1
             Application.Exit();
         }
 
-        private void firstnameLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void surnameLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void firstnameBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void surnameBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void changemessageButton_Click(object sender, EventArgs e)
         {
             this.BackColor = Color.Green;
@@ -90,11 +65,6 @@ namespace WindowsFormsApp1
                 surnameBox.Text + "\nHappy Programming " +
                 "\nEnjoy programming " + firstnameBox.Text +
                 "\nGet on with it Georgia";
-        }
-
-        private void townBox_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

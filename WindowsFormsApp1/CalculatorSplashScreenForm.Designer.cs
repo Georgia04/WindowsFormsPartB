@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class splashscreenForm
+    partial class SplashscreenForm
     {
         /// <summary>
         /// Required designer variable.

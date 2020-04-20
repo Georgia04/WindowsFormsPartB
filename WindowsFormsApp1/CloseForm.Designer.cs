@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class closeScreen
+    partial class CloseScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -52,7 +52,7 @@
             this.Label1.Size = new System.Drawing.Size(133, 41);
             this.Label1.TabIndex = 1;
             this.Label1.Text = "GoodBye";
-            this.Label1.Click += new System.EventHandler(this.Label1_Click);
+            this.Label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // closeScreen
             // 

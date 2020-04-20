@@ -37,15 +37,5 @@ namespace WindowsFormsApp1
         {
             Close();
         }
-
-        private void WelcomeForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bragLabel_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

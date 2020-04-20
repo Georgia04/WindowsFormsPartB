@@ -14,9 +14,9 @@ namespace WindowsFormsApp1
     /// This image introduces the application
     /// author:Georgia
     /// </summary>
-    public partial class splashscreenForm : Form
+    public partial class SplashscreenForm : Form
     {
-        public splashscreenForm()
+        public SplashscreenForm()
         {
             InitializeComponent();
         }

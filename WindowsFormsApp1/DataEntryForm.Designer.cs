@@ -55,7 +55,7 @@
             this.mainForm.Size = new System.Drawing.Size(620, 47);
             this.mainForm.TabIndex = 0;
             this.mainForm.Text = "Georgia\'s Details Data Entry Form";
-            this.mainForm.Click += new System.EventHandler(this.mainForm_Click);
+            
             // 
             // quitButton
             // 
@@ -76,7 +76,7 @@
             this.firstnameLabel.Size = new System.Drawing.Size(129, 27);
             this.firstnameLabel.TabIndex = 2;
             this.firstnameLabel.Text = "First Name";
-            this.firstnameLabel.Click += new System.EventHandler(this.firstnameLabel_Click);
+            
             // 
             // surnamenameLabel
             // 
@@ -87,7 +87,7 @@
             this.surnamenameLabel.Size = new System.Drawing.Size(110, 27);
             this.surnamenameLabel.TabIndex = 3;
             this.surnamenameLabel.Text = "Surname";
-            this.surnamenameLabel.Click += new System.EventHandler(this.surnameLabel_Click);
+           
             // 
             // messageLabel
             // 
@@ -109,7 +109,7 @@
             this.firstnameBox.Name = "firstnameBox";
             this.firstnameBox.Size = new System.Drawing.Size(235, 34);
             this.firstnameBox.TabIndex = 5;
-            this.firstnameBox.TextChanged += new System.EventHandler(this.firstnameBox_TextChanged);
+            
             // 
             // surnameBox
             // 
@@ -119,7 +119,7 @@
             this.surnameBox.Name = "surnameBox";
             this.surnameBox.Size = new System.Drawing.Size(235, 34);
             this.surnameBox.TabIndex = 6;
-            this.surnameBox.TextChanged += new System.EventHandler(this.surnameBox_TextChanged);
+           
             // 
             // clearButton
             // 
@@ -180,7 +180,7 @@
             this.townBox.Name = "townBox";
             this.townBox.Size = new System.Drawing.Size(235, 34);
             this.townBox.TabIndex = 12;
-            this.townBox.TextChanged += new System.EventHandler(this.townBox_TextChanged);
+            
             // 
             // townLabel
             // 
@@ -216,7 +216,7 @@
             this.Name = "DataEntryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
-            this.Load += new System.EventHandler(this.DataEntryForm_Load);
+            this.Load += new System.EventHandler(this.dataEntryForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
