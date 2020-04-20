@@ -19,11 +19,12 @@ namespace WindowsFormsApp1
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new GameUI());
+            //Application.Run(new GameUI());
             //Application.Run(new WelcomeForm());
             //Application.Run(new DataEntryForm());
             //Application.Run(new CalculatorForm());
             //Application.Run(new splashscreenForm());
+            Application.Run(new CurrencyConverterForm());
             
         }
     }

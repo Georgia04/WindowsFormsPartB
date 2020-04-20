@@ -241,7 +241,7 @@
             this.Controls.Add(this.firstnumBox);
             this.Name = "CalculatorForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Calculator";
+            this.Text = "Georgia\'s Calculator";
             this.Load += new System.EventHandler(this.calculatorForm_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
