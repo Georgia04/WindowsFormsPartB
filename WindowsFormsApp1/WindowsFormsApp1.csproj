@@ -46,10 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MonkeyBashForm.cs">
+    <Compile Include="Unit 3\MyPadForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MonkeyBashForm.Designer.cs">
+    <Compile Include="Unit 3\MyPadForm.Designer.cs">
+      <DependentUpon>MyPadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Unit 3\MonkeyBashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit 3\MonkeyBashForm.Designer.cs">
       <DependentUpon>MonkeyBashForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Unit 3\CurrencyConverterForm.cs">
@@ -115,7 +121,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MonkeyBashForm.resx">
+    <EmbeddedResource Include="Unit 3\MyPadForm.resx">
+      <DependentUpon>MyPadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unit 3\MonkeyBashForm.resx">
       <DependentUpon>MonkeyBashForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Unit 3\CurrencyConverterForm.resx">

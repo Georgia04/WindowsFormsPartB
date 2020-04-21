@@ -10,6 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
+    /// <summary>
+    /// This form moves a monkey and shows a message
+    /// when the monkey is clicked
+    /// author:Georgia
+    /// </summary>
     public partial class MonkeyBashForm : Form
     {
         private int x, y;
