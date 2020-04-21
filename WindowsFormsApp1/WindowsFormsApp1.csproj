@@ -46,22 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CurrencyConverterForm.cs">
+    <Compile Include="Unit 3\CurrencyConverterForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CurrencyConverterForm.Designer.cs">
+    <Compile Include="Unit 3\CurrencyConverterForm.Designer.cs">
       <DependentUpon>CurrencyConverterForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PizzaShopForm.cs">
+    <Compile Include="Unit 3\PizzaShopForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PizzaShopForm.Designer.cs">
+    <Compile Include="Unit 3\PizzaShopForm.Designer.cs">
       <DependentUpon>PizzaShopForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PoshNoshForm.cs">
+    <Compile Include="Unit 3\PoshNoshForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PoshNoshForm.Designer.cs">
+    <Compile Include="Unit 3\PoshNoshForm.Designer.cs">
       <DependentUpon>PoshNoshForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Unit 1\CalculatorForm.cs">
@@ -109,13 +109,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CurrencyConverterForm.resx">
+    <EmbeddedResource Include="Unit 3\CurrencyConverterForm.resx">
       <DependentUpon>CurrencyConverterForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PizzaShopForm.resx">
+    <EmbeddedResource Include="Unit 3\PizzaShopForm.resx">
       <DependentUpon>PizzaShopForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PoshNoshForm.resx">
+    <EmbeddedResource Include="Unit 3\PoshNoshForm.resx">
       <DependentUpon>PoshNoshForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Unit 1\CalculatorForm.resx">
@@ -166,6 +166,10 @@
     <Content Include="bin\Debug\Paper.jpg" />
     <Content Include="bin\Debug\Scissors.jpg" />
     <Content Include="bin\Debug\Stone.jpg" />
+    <Content Include="bin\Images 2\burger.jpg" />
+    <Content Include="bin\Images 2\meat balls 2.jpg" />
+    <Content Include="bin\Images 2\soup of the day.jpg" />
+    <Content Include="bin\Images 2\spaghetti Bolognose.jpg" />
     <Content Include="Images\Paper.jpg" />
     <Content Include="Images\Scissors.jpg" />
     <Content Include="Images\Stone.jpg" />

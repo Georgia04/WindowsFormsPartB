@@ -26,6 +26,7 @@ namespace WindowsFormsApp1
             //Application.Run(new splashscreenForm());
             //Application.Run(new CurrencyconverterForm());
             //Application.Run(new PizzaShopForm());
+            Application.Run(new PoshNoshForm());
         }
     }
 }
