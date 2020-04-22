@@ -10,6 +10,12 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
+    /// <summary>
+    /// This form shows pictures of some monsters
+    /// when user choose a monster.
+    /// Author: Georgia
+    /// </summary>
+    
     public partial class PictureForm : Form
     {
         public PictureForm()
@@ -35,7 +41,7 @@ namespace WindowsFormsApp1
             {
                 pictureChoice.Image = Image.FromFile("RedHarpy.gif");
             }
-            else if (comboChoice.Text == "scorpius")
+            else if (comboChoice.Text == "Scorpius")
             {
                 pictureChoice.Image = Image.FromFile("scorpius.jpg");
             }
