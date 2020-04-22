@@ -29,7 +29,8 @@ namespace WindowsFormsApp1
             //Application.Run(new PoshNoshForm());
             //Application.Run(new MonkeyBashForm());
             //Application.Run(new MyPadForm());
-            Application.Run(new TargetForm());
+            //Application.Run(new TargetForm());
+            Application.Run(new PictureForm());
         }
     }
 }
