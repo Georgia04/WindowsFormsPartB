@@ -30,7 +30,7 @@ namespace WindowsFormsApp1
             //Application.Run(new MonkeyBashForm());
             //Application.Run(new MyPadForm());
             //Application.Run(new TargetForm());
-            Application.Run(new PictureForm());
+            //Application.Run(new PictureForm());
         }
     }
 }
