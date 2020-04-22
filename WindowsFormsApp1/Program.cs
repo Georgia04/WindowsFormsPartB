@@ -28,7 +28,8 @@ namespace WindowsFormsApp1
             //Application.Run(new PizzaShopForm());
             //Application.Run(new PoshNoshForm());
             //Application.Run(new MonkeyBashForm());
-            Application.Run(new MyPadForm());
+            //Application.Run(new MyPadForm());
+            Application.Run(new TargetForm());
         }
     }
 }

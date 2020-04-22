@@ -35,8 +35,8 @@ namespace WindowsFormsApp1
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            x = generator.Next(this.Width - 200);
-            y = generator.Next(this.Height - 200);
+            x = generator.Next(panel1.Width - 200);
+            y = generator.Next(panel1.Height - 200);
 
             pictureBox1.Left = x;
             pictureBox1.Top = y;
@@ -47,11 +47,11 @@ namespace WindowsFormsApp1
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            x = generator.Next(this.Width - 200);
-            y = generator.Next(this.Height - 200);
+            x = generator.Next(panel1.Width - 200);
+            y = generator.Next(panel1.Height - 200);
 
-            pictureBox1.Left = x;
-            pictureBox1.Top = y;
+            pictureBox2.Left = x;
+            pictureBox2.Top = y;
 
             labelTotalHits.Text = "Hits = " + hits + " Misses = " + misses;
 
@@ -60,11 +60,11 @@ namespace WindowsFormsApp1
 
         private void timer3_Tick(object sender, EventArgs e)
         {
-            x = generator.Next(this.Width - 200);
-            y = generator.Next(this.Height - 200);
+            x = generator.Next(panel1.Width - 200);
+            y = generator.Next(panel1.Height - 200);
 
-            pictureBox1.Left = x;
-            pictureBox1.Top = y;
+            pictureBox3.Left = x;
+            pictureBox3.Top = y;
 
             labelTotalHits.Text = "Hits = " + hits + " Misses = " + misses;
 
@@ -73,11 +73,11 @@ namespace WindowsFormsApp1
 
         private void timer4_Tick(object sender, EventArgs e)
         {
-            x = generator.Next(this.Width - 200);
-            y = generator.Next(this.Height - 200);
+            x = generator.Next(panel1.Width - 200);
+            y = generator.Next(panel1.Height - 200);
 
-            pictureBox1.Left = x;
-            pictureBox1.Top = y;
+            pictureBox4.Left = x;
+            pictureBox4.Top = y;
 
             labelTotalHits.Text = "Hits = " + hits + " Misses = " + misses;
 
@@ -90,12 +90,6 @@ namespace WindowsFormsApp1
             hits = hits + 1;
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Ouch!");
-            hits = hits + 1;
-        }
-
 
         private void startForm_Click(object sender, EventArgs e)
         {
@@ -103,11 +97,6 @@ namespace WindowsFormsApp1
             timer2.Enabled = true;
             timer3.Enabled = true;
             timer4.Enabled = true;
-        }
-
-        private void labelTotalHits_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void stopForm_Click(object sender, EventArgs e)
@@ -123,13 +112,25 @@ namespace WindowsFormsApp1
             Application.Exit();
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void panel1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("You MISSED!");
+            misses = misses + 1;
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
         {
             MessageBox.Show("Ouch!");
             hits = hits + 1;
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+        private void pictureBox4_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ouch!");
+            hits = hits + 1;
+        }
+
+        private void pictureBox3_Click_1(object sender, EventArgs e)
         {
             MessageBox.Show("Ouch!");
             hits = hits + 1;
