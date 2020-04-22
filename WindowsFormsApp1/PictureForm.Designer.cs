@@ -54,18 +54,22 @@
             // 
             // pictureChoice
             // 
-            this.pictureChoice.Location = new System.Drawing.Point(345, 79);
+            this.pictureChoice.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureChoice.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureChoice.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureChoice.Location = new System.Drawing.Point(301, 79);
             this.pictureChoice.Name = "pictureChoice";
-            this.pictureChoice.Size = new System.Drawing.Size(323, 350);
+            this.pictureChoice.Size = new System.Drawing.Size(386, 375);
+            this.pictureChoice.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureChoice.TabIndex = 1;
             this.pictureChoice.TabStop = false;
             // 
             // quitForm
             // 
             this.quitForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.quitForm.Location = new System.Drawing.Point(529, 486);
+            this.quitForm.Location = new System.Drawing.Point(558, 496);
             this.quitForm.Name = "quitForm";
-            this.quitForm.Size = new System.Drawing.Size(105, 44);
+            this.quitForm.Size = new System.Drawing.Size(129, 49);
             this.quitForm.TabIndex = 2;
             this.quitForm.Text = "Quit";
             this.quitForm.UseVisualStyleBackColor = true;
@@ -75,6 +79,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(776, 581);
             this.Controls.Add(this.quitForm);
             this.Controls.Add(this.pictureChoice);
