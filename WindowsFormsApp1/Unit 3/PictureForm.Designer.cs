@@ -86,7 +86,7 @@
             this.Controls.Add(this.comboChoice);
             this.Name = "PictureForm";
             this.Text = "Georgia\'s Picture App";
-            this.Load += new System.EventHandler(this.PictureForm_Load);
+           
             ((System.ComponentModel.ISupportInitialize)(this.pictureChoice)).EndInit();
             this.ResumeLayout(false);
 

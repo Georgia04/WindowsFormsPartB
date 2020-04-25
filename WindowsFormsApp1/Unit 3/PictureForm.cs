@@ -55,10 +55,5 @@ namespace WindowsFormsApp1
         {
             Application.Exit();
         }
-
-        private void PictureForm_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
