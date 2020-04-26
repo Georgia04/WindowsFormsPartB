@@ -10,6 +10,10 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
+    /// <summary>
+    /// This form shows the bill details when a user make an order
+    /// Author: Georgia
+    /// </summary>
     public partial class ResultsForm : Form
     {
         public ResultsForm()
@@ -21,19 +25,20 @@ namespace WindowsFormsApp1
         {
             double n1, n2, answer;
 
-            try
+            try 
             {
                 n1 = Convert.ToDouble(totalBill.Text);
                 n2 = Convert.ToDouble(peopleNumber.Text);
                 answer = n1 / n2;
                 eachPays.Text = answer.ToString();
-                n1 = Convert.ToDouble(totalBill.Text);
             }
-
             catch
             {
                 MessageBox.Show("Error in Data Entry");
             }
+
+
+
 
         }
 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TipsterForm));
             this.billLabel = new System.Windows.Forms.Label();
             this.peoplenumberLabel = new System.Windows.Forms.Label();
             this.billBox = new System.Windows.Forms.TextBox();
@@ -118,9 +119,11 @@
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(479, 57);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(318, 324);
+            this.pictureBox1.Size = new System.Drawing.Size(320, 341);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
@@ -194,6 +197,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(843, 507);
             this.Controls.Add(this.tipBox);
             this.Controls.Add(this.pictureBox1);

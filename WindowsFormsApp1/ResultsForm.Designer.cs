@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.billdetailsBox = new System.Windows.Forms.GroupBox();
+            this.resultsTip = new System.Windows.Forms.Label();
+            this.tipLabel = new System.Windows.Forms.Label();
             this.peopleNumber = new System.Windows.Forms.Label();
             this.totalBill = new System.Windows.Forms.Label();
             this.peopleLabel = new System.Windows.Forms.Label();
@@ -36,8 +38,6 @@
             this.eachpaysLabel = new System.Windows.Forms.Label();
             this.eachPays = new System.Windows.Forms.Label();
             this.closeForm = new System.Windows.Forms.Button();
-            this.tipLabel = new System.Windows.Forms.Label();
-            this.resultsTip = new System.Windows.Forms.Label();
             this.billdetailsBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,14 +52,31 @@
             this.billdetailsBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.billdetailsBox.Location = new System.Drawing.Point(63, 54);
             this.billdetailsBox.Name = "billdetailsBox";
-            this.billdetailsBox.Size = new System.Drawing.Size(516, 284);
+            this.billdetailsBox.Size = new System.Drawing.Size(516, 338);
             this.billdetailsBox.TabIndex = 0;
             this.billdetailsBox.TabStop = false;
             this.billdetailsBox.Text = "Bill Details";
             // 
+            // resultsTip
+            // 
+            this.resultsTip.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.resultsTip.Location = new System.Drawing.Point(225, 232);
+            this.resultsTip.Name = "resultsTip";
+            this.resultsTip.Size = new System.Drawing.Size(92, 29);
+            this.resultsTip.TabIndex = 5;
+            // 
+            // tipLabel
+            // 
+            this.tipLabel.AutoSize = true;
+            this.tipLabel.Location = new System.Drawing.Point(21, 232);
+            this.tipLabel.Name = "tipLabel";
+            this.tipLabel.Size = new System.Drawing.Size(55, 29);
+            this.tipLabel.TabIndex = 4;
+            this.tipLabel.Text = "Tip:";
+            // 
             // peopleNumber
             // 
-            this.peopleNumber.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.peopleNumber.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.peopleNumber.Location = new System.Drawing.Point(225, 159);
             this.peopleNumber.Name = "peopleNumber";
             this.peopleNumber.Size = new System.Drawing.Size(92, 29);
@@ -67,7 +84,7 @@
             // 
             // totalBill
             // 
-            this.totalBill.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.totalBill.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.totalBill.Location = new System.Drawing.Point(225, 80);
             this.totalBill.Name = "totalBill";
             this.totalBill.Size = new System.Drawing.Size(92, 30);
@@ -96,7 +113,7 @@
             // 
             this.eachpaysLabel.AutoSize = true;
             this.eachpaysLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.eachpaysLabel.Location = new System.Drawing.Point(85, 391);
+            this.eachpaysLabel.Location = new System.Drawing.Point(85, 445);
             this.eachpaysLabel.Name = "eachpaysLabel";
             this.eachpaysLabel.Size = new System.Drawing.Size(142, 29);
             this.eachpaysLabel.TabIndex = 1;
@@ -104,9 +121,9 @@
             // 
             // eachPays
             // 
-            this.eachPays.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.eachPays.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.eachPays.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.eachPays.Location = new System.Drawing.Point(288, 391);
+            this.eachPays.Location = new System.Drawing.Point(288, 442);
             this.eachPays.Name = "eachPays";
             this.eachPays.Size = new System.Drawing.Size(165, 33);
             this.eachPays.TabIndex = 2;
@@ -122,27 +139,11 @@
             this.closeForm.UseVisualStyleBackColor = true;
             this.closeForm.Click += new System.EventHandler(this.closeForm_Click);
             // 
-            // tipLabel
-            // 
-            this.tipLabel.AutoSize = true;
-            this.tipLabel.Location = new System.Drawing.Point(21, 232);
-            this.tipLabel.Name = "tipLabel";
-            this.tipLabel.Size = new System.Drawing.Size(55, 29);
-            this.tipLabel.TabIndex = 4;
-            this.tipLabel.Text = "Tip:";
-            // 
-            // resultsTip
-            // 
-            this.resultsTip.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.resultsTip.Location = new System.Drawing.Point(225, 232);
-            this.resultsTip.Name = "resultsTip";
-            this.resultsTip.Size = new System.Drawing.Size(92, 29);
-            this.resultsTip.TabIndex = 5;
-            // 
             // ResultsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SandyBrown;
             this.ClientSize = new System.Drawing.Size(857, 559);
             this.Controls.Add(this.closeForm);
             this.Controls.Add(this.eachPays);

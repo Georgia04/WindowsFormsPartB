@@ -10,6 +10,12 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
+    /// <summary>
+    /// This form allows user to write the bill,
+    /// to select the tip and the number of people 
+    /// and to calculate it.
+    /// author: Georgia
+    /// </summary>
     public partial class TipsterForm : Form
     {
         public TipsterForm()
@@ -39,7 +45,7 @@ namespace WindowsFormsApp1
             Convert.ToDouble(billBox.Text);
             double newtotal, billnum;
             billnum = Convert.ToDouble(billBox.Text);
-            newtotal = billnum * 0;
+            newtotal = billnum * 0.00;
             newtotal = newtotal + billnum;
             billBox.Text = newtotal.ToString();
         }
