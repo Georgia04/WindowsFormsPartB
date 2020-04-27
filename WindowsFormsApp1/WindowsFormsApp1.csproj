@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ResultsForm.cs">
+    <Compile Include="Unit 4\ResultsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ResultsForm.Designer.cs">
+    <Compile Include="Unit 4\ResultsForm.Designer.cs">
       <DependentUpon>ResultsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="TipsterForm.cs">
+    <Compile Include="Unit 4\TipsterForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TipsterForm.Designer.cs">
+    <Compile Include="Unit 4\TipsterForm.Designer.cs">
       <DependentUpon>TipsterForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Unit 3\PictureForm.cs">
@@ -145,10 +145,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ResultsForm.resx">
+    <EmbeddedResource Include="Unit 4\ResultsForm.resx">
       <DependentUpon>ResultsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TipsterForm.resx">
+    <EmbeddedResource Include="Unit 4\TipsterForm.resx">
       <DependentUpon>TipsterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Unit 3\PictureForm.resx">
