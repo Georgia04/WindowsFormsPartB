@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TipsterForm));
             this.billLabel = new System.Windows.Forms.Label();
             this.peoplenumberLabel = new System.Windows.Forms.Label();
-            this.billBox = new System.Windows.Forms.TextBox();
-            this.peoplenumberBox = new System.Windows.Forms.ListBox();
+            this.textBill = new System.Windows.Forms.TextBox();
+            this.listPeople = new System.Windows.Forms.ListBox();
             this.calculateForm = new System.Windows.Forms.Button();
             this.quitForm = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -65,20 +65,20 @@
             this.peoplenumberLabel.TabIndex = 1;
             this.peoplenumberLabel.Text = "Number of People";
             // 
-            // billBox
+            // textBill
             // 
-            this.billBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.billBox.Location = new System.Drawing.Point(137, 58);
-            this.billBox.Name = "billBox";
-            this.billBox.Size = new System.Drawing.Size(245, 30);
-            this.billBox.TabIndex = 2;
+            this.textBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.textBill.Location = new System.Drawing.Point(137, 58);
+            this.textBill.Name = "textBill";
+            this.textBill.Size = new System.Drawing.Size(245, 30);
+            this.textBill.TabIndex = 2;
             // 
-            // peoplenumberBox
+            // listPeople
             // 
-            this.peoplenumberBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.peoplenumberBox.FormattingEnabled = true;
-            this.peoplenumberBox.ItemHeight = 26;
-            this.peoplenumberBox.Items.AddRange(new object[] {
+            this.listPeople.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.listPeople.FormattingEnabled = true;
+            this.listPeople.ItemHeight = 26;
+            this.listPeople.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -89,10 +89,10 @@
             "8",
             "9",
             "10"});
-            this.peoplenumberBox.Location = new System.Drawing.Point(294, 121);
-            this.peoplenumberBox.Name = "peoplenumberBox";
-            this.peoplenumberBox.Size = new System.Drawing.Size(88, 82);
-            this.peoplenumberBox.TabIndex = 3;
+            this.listPeople.Location = new System.Drawing.Point(294, 121);
+            this.listPeople.Name = "listPeople";
+            this.listPeople.Size = new System.Drawing.Size(88, 82);
+            this.listPeople.TabIndex = 3;
             // 
             // calculateForm
             // 
@@ -147,10 +147,10 @@
             this.madRadio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.madRadio.Location = new System.Drawing.Point(173, 92);
             this.madRadio.Name = "madRadio";
-            this.madRadio.Size = new System.Drawing.Size(81, 33);
+            this.madRadio.Size = new System.Drawing.Size(82, 33);
             this.madRadio.TabIndex = 3;
             this.madRadio.TabStop = true;
-            this.madRadio.Text = "mad";
+            this.madRadio.Text = "40%";
             this.madRadio.UseVisualStyleBackColor = true;
             this.madRadio.CheckedChanged += new System.EventHandler(this.madRadio_CheckedChanged);
             // 
@@ -173,10 +173,10 @@
             this.normalRadio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.normalRadio.Location = new System.Drawing.Point(173, 44);
             this.normalRadio.Name = "normalRadio";
-            this.normalRadio.Size = new System.Drawing.Size(108, 33);
+            this.normalRadio.Size = new System.Drawing.Size(82, 33);
             this.normalRadio.TabIndex = 1;
             this.normalRadio.TabStop = true;
-            this.normalRadio.Text = "normal";
+            this.normalRadio.Text = "10%";
             this.normalRadio.UseVisualStyleBackColor = true;
             this.normalRadio.CheckedChanged += new System.EventHandler(this.normalRadio_CheckedChanged);
             // 
@@ -203,8 +203,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.quitForm);
             this.Controls.Add(this.calculateForm);
-            this.Controls.Add(this.peoplenumberBox);
-            this.Controls.Add(this.billBox);
+            this.Controls.Add(this.listPeople);
+            this.Controls.Add(this.textBill);
             this.Controls.Add(this.peoplenumberLabel);
             this.Controls.Add(this.billLabel);
             this.Name = "TipsterForm";
@@ -221,8 +221,8 @@
 
         private System.Windows.Forms.Label billLabel;
         private System.Windows.Forms.Label peoplenumberLabel;
-        private System.Windows.Forms.TextBox billBox;
-        private System.Windows.Forms.ListBox peoplenumberBox;
+        private System.Windows.Forms.TextBox textBill;
+        private System.Windows.Forms.ListBox listPeople;
         private System.Windows.Forms.Button calculateForm;
         private System.Windows.Forms.Button quitForm;
         private System.Windows.Forms.PictureBox pictureBox1;

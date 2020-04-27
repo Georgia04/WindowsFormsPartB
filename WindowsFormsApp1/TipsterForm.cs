@@ -25,13 +25,13 @@ namespace WindowsFormsApp1
 
         private void calculateForm_Click(object sender, EventArgs e)
         {
-            Convert.ToString(billBox.Text);
-            Convert.ToString(peoplenumberBox.Text);
+            Convert.ToString(textBill.Text);
+            Convert.ToString(listPeople.Text);
             ResultsForm Results = new ResultsForm();
-            Results.peopleNumber.Text = peoplenumberBox.Text;
-            Results.totalBill.Text = billBox.Text;
-            this.peoplenumberBox.Text = "";
-            this.billBox.Focus();
+            Results.peopleNumber.Text = listPeople.Text;
+            Results.totalBill.Text = textBill.Text;
+            this.listPeople.Text = "";
+            this.textBill.Focus();
             Results.Show();
         }
 
@@ -42,42 +42,42 @@ namespace WindowsFormsApp1
 
         private void noneRadio_CheckedChanged(object sender, EventArgs e)
         {
-            Convert.ToDouble(billBox.Text);
+            Convert.ToDouble(textBill.Text);
             double newtotal, billnum;
-            billnum = Convert.ToDouble(billBox.Text);
+            billnum = Convert.ToDouble(textBill.Text);
             newtotal = billnum * 0.00;
             newtotal = newtotal + billnum;
-            billBox.Text = newtotal.ToString();
+            textBill.Text = newtotal.ToString();
         }
 
         private void normalRadio_CheckedChanged(object sender, EventArgs e)
         {
-            Convert.ToDouble(billBox.Text);
+            Convert.ToDouble(textBill.Text);
             double newtotal, billnum;
-            billnum = Convert.ToDouble(billBox.Text);
+            billnum = Convert.ToDouble(textBill.Text);
             newtotal = billnum * 0.10;
             newtotal = newtotal + billnum;
-            billBox.Text = newtotal.ToString();
+            textBill.Text = newtotal.ToString();
         }
 
         private void generousRadio_CheckedChanged(object sender, EventArgs e)
         {
-            Convert.ToDouble(billBox.Text);
+            Convert.ToDouble(textBill.Text);
             double newtotal, billnum;
-            billnum = Convert.ToDouble(billBox.Text);
+            billnum = Convert.ToDouble(textBill.Text);
             newtotal = billnum * 0.20;
             newtotal = newtotal + billnum;
-            billBox.Text = newtotal.ToString();
+            textBill.Text = newtotal.ToString();
         }
 
         private void madRadio_CheckedChanged(object sender, EventArgs e)
         {
-            Convert.ToDouble(billBox.Text);
+            Convert.ToDouble(textBill.Text);
             double newtotal, billnum;
-            billnum = Convert.ToDouble(billBox.Text);
-            newtotal = billnum * 0.60;
+            billnum = Convert.ToDouble(textBill.Text);
+            newtotal = billnum * 0.40;
             newtotal = newtotal + billnum;
-            billBox.Text = newtotal.ToString();
+            textBill.Text = newtotal.ToString();
         }
     }
 }

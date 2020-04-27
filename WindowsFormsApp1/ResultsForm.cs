@@ -29,17 +29,13 @@ namespace WindowsFormsApp1
             {
                 n1 = Convert.ToDouble(totalBill.Text);
                 n2 = Convert.ToDouble(peopleNumber.Text);
-                answer = n1 / n2;
+                answer = n1/n2;
                 eachPays.Text = answer.ToString();
             }
             catch
             {
                 MessageBox.Show("Error in Data Entry");
             }
-
-
-
-
         }
 
         private void closeForm_Click(object sender, EventArgs e)
