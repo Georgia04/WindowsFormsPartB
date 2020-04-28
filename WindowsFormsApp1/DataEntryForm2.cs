@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
 {
     public partial class DataEntryForm2 : Form
     {
-        int lunchCost, endCost;
+        int dinnerCost, endCost;
         
         public DataEntryForm2()
         {
@@ -33,13 +33,63 @@ namespace WindowsFormsApp1
             billForm.Show();
         }
 
+        private void fishpieCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (fishpieCheck.Checked) 
+            {
+                dinnerCost = 15;
+            }
+            endCost = dinnerCost;
+            billPrice.Text = "£ " + endCost.ToString("0.00");
+        }
+
+        private void pastaCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (pastaCheck.Checked)
+            {
+                dinnerCost = 15;
+            }
+            endCost = dinnerCost;
+            billPrice.Text = "£ " + endCost.ToString("0.00");
+        }
+
+        private void chickenCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chickenCheck.Checked)
+            {
+                dinnerCost = 15;
+            }
+            endCost = dinnerCost;
+            billPrice.Text = "£ " + endCost.ToString("0.00");
+        }
+
+        private void risottoCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (risottoCheck.Checked)
+            {
+                dinnerCost = 15;
+            }
+            endCost = dinnerCost;
+            billPrice.Text = "£ " + endCost.ToString("0.00");
+        }
+
+        private void lasagneCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (lasagneCheck.Checked)
+            {
+                dinnerCost = 15;
+            }
+            endCost = dinnerCost;
+            billPrice.Text = "£ " + endCost.ToString("0.00");
+        }
+
         private void budgetCheck_CheckedChanged(object sender, EventArgs e)
         {
             if (budgetCheck.Checked) 
             {
-               lunchCost = 5;
+               dinnerCost = 15;
             }
-            endCost = lunchCost;
+            endCost = dinnerCost;
             billPrice.Text = "£ " + endCost.ToString("0.00");
         }
     }

@@ -144,6 +144,7 @@
             this.chickenCheck.TabIndex = 5;
             this.chickenCheck.Text = "Chicken Curry";
             this.chickenCheck.UseVisualStyleBackColor = true;
+            this.chickenCheck.CheckedChanged += new System.EventHandler(this.chickenCheck_CheckedChanged);
             // 
             // risottoCheck
             // 
@@ -154,6 +155,7 @@
             this.risottoCheck.TabIndex = 4;
             this.risottoCheck.Text = "Risotto";
             this.risottoCheck.UseVisualStyleBackColor = true;
+            this.risottoCheck.CheckedChanged += new System.EventHandler(this.risottoCheck_CheckedChanged);
             // 
             // pastaCheck
             // 
@@ -164,6 +166,7 @@
             this.pastaCheck.TabIndex = 3;
             this.pastaCheck.Text = "Pasta";
             this.pastaCheck.UseVisualStyleBackColor = true;
+            this.pastaCheck.CheckedChanged += new System.EventHandler(this.pastaCheck_CheckedChanged);
             // 
             // lasagneCheck
             // 
@@ -174,6 +177,7 @@
             this.lasagneCheck.TabIndex = 2;
             this.lasagneCheck.Text = "Lasagne";
             this.lasagneCheck.UseVisualStyleBackColor = true;
+            this.lasagneCheck.CheckedChanged += new System.EventHandler(this.lasagneCheck_CheckedChanged);
             // 
             // fishpieCheck
             // 
@@ -184,6 +188,7 @@
             this.fishpieCheck.TabIndex = 1;
             this.fishpieCheck.Text = "Fish Pie";
             this.fishpieCheck.UseVisualStyleBackColor = true;
+            this.fishpieCheck.CheckedChanged += new System.EventHandler(this.fishpieCheck_CheckedChanged);
             // 
             // budgetCheck
             // 
