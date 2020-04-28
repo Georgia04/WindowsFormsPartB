@@ -209,6 +209,7 @@
             this.Controls.Add(this.billLabel);
             this.Name = "TipsterForm";
             this.Text = "Georgia\'s Tipster Bill";
+            this.Load += new System.EventHandler(this.TipsterForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tipBox.ResumeLayout(false);
             this.tipBox.PerformLayout();

@@ -79,5 +79,10 @@ namespace WindowsFormsApp1
             newtotal = newtotal + billnum;
             textBill.Text = newtotal.ToString();
         }
+
+        private void TipsterForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

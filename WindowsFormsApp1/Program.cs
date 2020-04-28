@@ -31,8 +31,10 @@ namespace WindowsFormsApp1
             //Application.Run(new MyPadForm());
             //Application.Run(new TargetForm());
             //Application.Run(new PictureForm());
-            Application.Run(new TipsterForm());
-            Application.Run(new ResultsForm());
+            //Application.Run(new TipsterForm());
+            //Application.Run(new ResultsForm());
+            //Application.Run(new DataEntryForm2());
+            Application.Run(new CheckBillForm());
         }
     }
 }

@@ -59,6 +59,7 @@
             this.pizzaPrice.TabIndex = 1;
             this.pizzaPrice.TabStop = false;
             this.pizzaPrice.Text = "Pizza Type";
+            this.pizzaPrice.Enter += new System.EventHandler(this.pizzaPrice_Enter);
             // 
             // smallRadio
             // 
@@ -120,6 +121,7 @@
             this.finalPrice.Name = "finalPrice";
             this.finalPrice.Size = new System.Drawing.Size(100, 29);
             this.finalPrice.TabIndex = 0;
+            
             // 
             // toppingPrice
             // 

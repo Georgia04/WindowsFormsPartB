@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckBillForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckBillForm.Designer.cs">
+      <DependentUpon>CheckBillForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntryForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataEntryForm2.Designer.cs">
+      <DependentUpon>DataEntryForm2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Unit 4\ResultsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +157,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CheckBillForm.resx">
+      <DependentUpon>CheckBillForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryForm2.resx">
+      <DependentUpon>DataEntryForm2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Unit 4\ResultsForm.resx">
       <DependentUpon>ResultsForm.cs</DependentUpon>
     </EmbeddedResource>

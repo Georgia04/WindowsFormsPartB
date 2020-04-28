@@ -119,6 +119,12 @@ namespace WindowsFormsApp1
             finalPrice.Text = "£ " + endCost.ToString("0.00");
         }
 
+        private void pizzaPrice_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+
         private void bbq_CheckedChanged(object sender, EventArgs e)
         {
             if (bbq.Checked)
