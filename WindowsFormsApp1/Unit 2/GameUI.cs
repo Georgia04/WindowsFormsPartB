@@ -109,6 +109,5 @@ namespace WindowsFormsApp1
             System.Threading.Thread.Sleep(2000);
             RPSsplashscreen.Close();
         }
-
     }
 }

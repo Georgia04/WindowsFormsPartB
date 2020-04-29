@@ -68,7 +68,7 @@
             this.userPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.userPictureBox.TabIndex = 3;
             this.userPictureBox.TabStop = false;
-           
+            
             // 
             // rockRadioButton
             // 

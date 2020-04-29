@@ -10,20 +10,15 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class CheckBillForm : Form
+    public partial class TotalsForm : Form
     {
-        DataEntryForm2 form2 = new DataEntryForm2();
-
-        public CheckBillForm()
+        public TotalsForm()
         {
             InitializeComponent();
         }
 
         private void backForm_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            DataEntryForm2 entryForm2 = new DataEntryForm2();
-            entryForm2.ShowDialog();
             this.Close();
         }
     }

@@ -149,6 +149,7 @@ namespace WindowsFormsApp1
                 
                
                 WinnerName = PlayerName;
+
             }
 
             else if (PlayerScore < ComputerScore)

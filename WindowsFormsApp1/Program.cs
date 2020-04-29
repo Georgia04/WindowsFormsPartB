@@ -19,7 +19,7 @@ namespace WindowsFormsApp1
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            //Application.Run(new GameUI());
+           //Application.Run(new GameUI());
             //Application.Run(new WelcomeForm());
             //Application.Run(new DataEntryForm());
             //Application.Run(new CalculatorForm());
@@ -33,8 +33,9 @@ namespace WindowsFormsApp1
             //Application.Run(new PictureForm());
             //Application.Run(new TipsterForm());
             //Application.Run(new ResultsForm());
-            //Application.Run(new DataEntryForm2());
+            Application.Run(new DataEntryForm2());
             Application.Run(new CheckBillForm());
+            Application.Run(new TotalsForm());
         }
     }
 }

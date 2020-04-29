@@ -58,6 +58,12 @@
     <Compile Include="DataEntryForm2.Designer.cs">
       <DependentUpon>DataEntryForm2.cs</DependentUpon>
     </Compile>
+    <Compile Include="TotalsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TotalsForm.Designer.cs">
+      <DependentUpon>TotalsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Unit 4\ResultsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DataEntryForm2.resx">
       <DependentUpon>DataEntryForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TotalsForm.resx">
+      <DependentUpon>TotalsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Unit 4\ResultsForm.resx">
       <DependentUpon>ResultsForm.cs</DependentUpon>
