@@ -39,12 +39,12 @@
             this.substractForm = new System.Windows.Forms.Button();
             this.multiplyForm = new System.Windows.Forms.Button();
             this.divideForm = new System.Windows.Forms.Button();
-            this.quitButton = new System.Windows.Forms.Button();
+            this.quitForm = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.powerButton = new System.Windows.Forms.Button();
-            this.averageButton = new System.Windows.Forms.Button();
-            this.clearButton = new System.Windows.Forms.Button();
+            this.raiseToPower = new System.Windows.Forms.Button();
+            this.calculateAverage = new System.Windows.Forms.Button();
+            this.clearNumbers = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // firstnumBox
@@ -54,7 +54,6 @@
             this.firstnumBox.Name = "firstnumBox";
             this.firstnumBox.Size = new System.Drawing.Size(100, 53);
             this.firstnumBox.TabIndex = 0;
-            this.firstnumBox.Text = "1";
             // 
             // secnumBox
             // 
@@ -103,7 +102,6 @@
             this.resultLabel.Size = new System.Drawing.Size(72, 25);
             this.resultLabel.TabIndex = 5;
             this.resultLabel.Text = "Result:";
-            this.resultLabel.Click += new System.EventHandler(this.resultLabel_Click);
             // 
             // numresultLabel
             // 
@@ -158,15 +156,16 @@
             this.divideForm.UseVisualStyleBackColor = true;
             this.divideForm.Click += new System.EventHandler(this.divideNumbers);
             // 
-            // quitButton
+            // quitForm
             // 
-            this.quitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.quitButton.Location = new System.Drawing.Point(799, 515);
-            this.quitButton.Name = "quitButton";
-            this.quitButton.Size = new System.Drawing.Size(122, 39);
-            this.quitButton.TabIndex = 11;
-            this.quitButton.Text = "Quit";
-            this.quitButton.UseVisualStyleBackColor = true;
+            this.quitForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.quitForm.Location = new System.Drawing.Point(799, 515);
+            this.quitForm.Name = "quitForm";
+            this.quitForm.Size = new System.Drawing.Size(122, 39);
+            this.quitForm.TabIndex = 11;
+            this.quitForm.Text = "Quit";
+            this.quitForm.UseVisualStyleBackColor = true;
+            this.quitForm.Click += new System.EventHandler(this.quitForm_Click);
             // 
             // panel1
             // 
@@ -184,38 +183,38 @@
             this.panel2.Size = new System.Drawing.Size(866, 10);
             this.panel2.TabIndex = 13;
             // 
-            // powerButton
+            // raiseToPower
             // 
-            this.powerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.powerButton.Location = new System.Drawing.Point(57, 515);
-            this.powerButton.Name = "powerButton";
-            this.powerButton.Size = new System.Drawing.Size(122, 39);
-            this.powerButton.TabIndex = 11;
-            this.powerButton.Text = "Power";
-            this.powerButton.UseVisualStyleBackColor = true;
-            this.powerButton.Click += new System.EventHandler(this.powerForm);
+            this.raiseToPower.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.raiseToPower.Location = new System.Drawing.Point(57, 515);
+            this.raiseToPower.Name = "raiseToPower";
+            this.raiseToPower.Size = new System.Drawing.Size(122, 39);
+            this.raiseToPower.TabIndex = 11;
+            this.raiseToPower.Text = "Power";
+            this.raiseToPower.UseVisualStyleBackColor = true;
+            this.raiseToPower.Click += new System.EventHandler(this.raiseToPower_Click);
             // 
-            // averageButton
+            // calculateAverage
             // 
-            this.averageButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.averageButton.Location = new System.Drawing.Point(321, 515);
-            this.averageButton.Name = "averageButton";
-            this.averageButton.Size = new System.Drawing.Size(122, 39);
-            this.averageButton.TabIndex = 11;
-            this.averageButton.Text = "Average";
-            this.averageButton.UseVisualStyleBackColor = true;
-            this.averageButton.Click += new System.EventHandler(this.averageForm);
+            this.calculateAverage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.calculateAverage.Location = new System.Drawing.Point(321, 515);
+            this.calculateAverage.Name = "calculateAverage";
+            this.calculateAverage.Size = new System.Drawing.Size(122, 39);
+            this.calculateAverage.TabIndex = 11;
+            this.calculateAverage.Text = "Average";
+            this.calculateAverage.UseVisualStyleBackColor = true;
+            this.calculateAverage.Click += new System.EventHandler(this.calculateAverage_Click);
             // 
-            // clearButton
+            // clearNumbers
             // 
-            this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.clearButton.Location = new System.Drawing.Point(585, 515);
-            this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(122, 39);
-            this.clearButton.TabIndex = 11;
-            this.clearButton.Text = "Clear";
-            this.clearButton.UseVisualStyleBackColor = true;
-            this.clearButton.Click += new System.EventHandler(this.clearForm);
+            this.clearNumbers.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.clearNumbers.Location = new System.Drawing.Point(585, 515);
+            this.clearNumbers.Name = "clearNumbers";
+            this.clearNumbers.Size = new System.Drawing.Size(122, 39);
+            this.clearNumbers.TabIndex = 11;
+            this.clearNumbers.Text = "Clear";
+            this.clearNumbers.UseVisualStyleBackColor = true;
+            this.clearNumbers.Click += new System.EventHandler(this.clearForm);
             // 
             // CalculatorForm
             // 
@@ -223,12 +222,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Orange;
             this.ClientSize = new System.Drawing.Size(966, 616);
-            this.Controls.Add(this.clearButton);
-            this.Controls.Add(this.averageButton);
-            this.Controls.Add(this.powerButton);
+            this.Controls.Add(this.clearNumbers);
+            this.Controls.Add(this.calculateAverage);
+            this.Controls.Add(this.raiseToPower);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.quitButton);
+            this.Controls.Add(this.quitForm);
             this.Controls.Add(this.divideForm);
             this.Controls.Add(this.multiplyForm);
             this.Controls.Add(this.substractForm);
@@ -262,11 +261,11 @@
         private System.Windows.Forms.Button substractForm;
         private System.Windows.Forms.Button multiplyForm;
         private System.Windows.Forms.Button divideForm;
-        private System.Windows.Forms.Button quitButton;
+        private System.Windows.Forms.Button quitForm;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button powerButton;
-        private System.Windows.Forms.Button averageButton;
-        private System.Windows.Forms.Button clearButton;
+        private System.Windows.Forms.Button raiseToPower;
+        private System.Windows.Forms.Button calculateAverage;
+        private System.Windows.Forms.Button clearNumbers;
     }
 }

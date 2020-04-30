@@ -17,25 +17,20 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void greetingLabel_Click(object sender, EventArgs e)
+        private void quitButton_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
 
-        private void btnShow1_Click(object sender, EventArgs e)
-        {
-            bragLabel.Text = "Supa Dupa Computer\n Selling for $339";
-        }
-
-        private void softwareButton_Click(object sender, EventArgs e)
+        private void showBestSoftware_Click_1(object sender, EventArgs e)
         {
             bragLabel.Text = "Windows 10\n A real bargain at 29.90";
             bragLabel.BackColor = Color.LightYellow;
         }
 
-        private void quitButton_Click(object sender, EventArgs e)
+        private void showBestComputer_Click_1(object sender, EventArgs e)
         {
-            Close();
+            bragLabel.Text = "Supa Dupa Computer\n Selling for $339";
         }
     }
 }

@@ -25,10 +25,5 @@ namespace WindowsFormsApp1
         {
             this.Close();
         }
-
-        private void splashscreenForm_Load(object sender, EventArgs e)
-        {
-           
-        }
     }
 }

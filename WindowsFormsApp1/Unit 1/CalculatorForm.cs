@@ -17,14 +17,15 @@ namespace WindowsFormsApp1
     /// </summary>
     public partial class CalculatorForm : Form
     {
+        Image image1;
+        Image image2;
+        Image image3;
+        Image image4;
+
         public CalculatorForm()
         {
+            image1 = Image.FromFile();
             InitializeComponent();
-        }
-
-        private void calculatorForm_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void calculatorForm_Load_1(object sender, EventArgs e)
@@ -35,22 +36,10 @@ namespace WindowsFormsApp1
             splashscreenForm.Close();
         }
 
-        private void resultLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void quitForm(object sender, EventArgs e)
-        {
-            CloseScreen closeButton= new CloseScreen ();
-            closeButton.ShowDialog();
-            closeButton.Close();
-            Application.Exit();
-            
-        }
-
         private void addNumbers(object sender, EventArgs e)
         {
+            CalculatorForm2 form2 = new CalculatorForm2();
+
             Double number1, number2, result;
             number1 = Convert.ToDouble(firstnumBox.Text);
             number2 = Convert.ToDouble(secnumBox.Text);
@@ -92,7 +81,7 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void powerForm(object sender, EventArgs e)
+        private void raiseToPower_Click(object sender, EventArgs e)
         {
             Double number1, number2, result;
             number1 = Convert.ToDouble(firstnumBox.Text);
@@ -101,7 +90,7 @@ namespace WindowsFormsApp1
             numresultLabel.Text = result.ToString();
         }
 
-        private void averageForm(object sender, EventArgs e)
+        private void calculateAverage_Click(object sender, EventArgs e)
         {
             Double number1, number2, result;
             number1 = Convert.ToDouble(firstnumBox.Text);
@@ -115,6 +104,14 @@ namespace WindowsFormsApp1
             firstnumBox.Text = "";
             secnumBox.Text = "";
             numresultLabel.Text = "";
+        }
+
+        private void quitForm_Click(object sender, EventArgs e)
+        {
+            CloseScreen closeButton = new CloseScreen();
+            closeButton.ShowDialog();
+            closeButton.Close();
+            Application.Exit();
         }
     }
 }

@@ -36,10 +36,10 @@
             this.firstnameBox = new System.Windows.Forms.TextBox();
             this.surnameBox = new System.Windows.Forms.TextBox();
             this.clearButton = new System.Windows.Forms.Button();
-            this.messageButton = new System.Windows.Forms.Button();
-            this.upperButton = new System.Windows.Forms.Button();
-            this.lowerButton = new System.Windows.Forms.Button();
-            this.changemessageButton = new System.Windows.Forms.Button();
+            this.showMessage = new System.Windows.Forms.Button();
+            this.showUpperLetters = new System.Windows.Forms.Button();
+            this.showLowerLetters = new System.Windows.Forms.Button();
+            this.changeMessage = new System.Windows.Forms.Button();
             this.townBox = new System.Windows.Forms.TextBox();
             this.townLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -55,7 +55,6 @@
             this.mainForm.Size = new System.Drawing.Size(620, 47);
             this.mainForm.TabIndex = 0;
             this.mainForm.Text = "Georgia\'s Details Data Entry Form";
-            
             // 
             // quitButton
             // 
@@ -76,7 +75,6 @@
             this.firstnameLabel.Size = new System.Drawing.Size(129, 27);
             this.firstnameLabel.TabIndex = 2;
             this.firstnameLabel.Text = "First Name";
-            
             // 
             // surnamenameLabel
             // 
@@ -87,7 +85,6 @@
             this.surnamenameLabel.Size = new System.Drawing.Size(110, 27);
             this.surnamenameLabel.TabIndex = 3;
             this.surnamenameLabel.Text = "Surname";
-           
             // 
             // messageLabel
             // 
@@ -109,7 +106,6 @@
             this.firstnameBox.Name = "firstnameBox";
             this.firstnameBox.Size = new System.Drawing.Size(235, 34);
             this.firstnameBox.TabIndex = 5;
-            
             // 
             // surnameBox
             // 
@@ -119,7 +115,6 @@
             this.surnameBox.Name = "surnameBox";
             this.surnameBox.Size = new System.Drawing.Size(235, 34);
             this.surnameBox.TabIndex = 6;
-           
             // 
             // clearButton
             // 
@@ -131,46 +126,46 @@
             this.clearButton.UseVisualStyleBackColor = true;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
-            // messageButton
+            // showMessage
             // 
-            this.messageButton.AutoSize = true;
-            this.messageButton.Location = new System.Drawing.Point(60, 353);
-            this.messageButton.Name = "messageButton";
-            this.messageButton.Size = new System.Drawing.Size(189, 55);
-            this.messageButton.TabIndex = 8;
-            this.messageButton.Text = "&Message";
-            this.messageButton.UseVisualStyleBackColor = true;
-            this.messageButton.Click += new System.EventHandler(this.messageButton_Click);
+            this.showMessage.AutoSize = true;
+            this.showMessage.Location = new System.Drawing.Point(60, 353);
+            this.showMessage.Name = "showMessage";
+            this.showMessage.Size = new System.Drawing.Size(189, 55);
+            this.showMessage.TabIndex = 8;
+            this.showMessage.Text = "&Message";
+            this.showMessage.UseVisualStyleBackColor = true;
+            this.showMessage.Click += new System.EventHandler(this.showMessage_Click_1);
             // 
-            // upperButton
+            // showUpperLetters
             // 
-            this.upperButton.Location = new System.Drawing.Point(50, 445);
-            this.upperButton.Name = "upperButton";
-            this.upperButton.Size = new System.Drawing.Size(240, 52);
-            this.upperButton.TabIndex = 9;
-            this.upperButton.Text = "Upper Case";
-            this.upperButton.UseVisualStyleBackColor = true;
-            this.upperButton.Click += new System.EventHandler(this.upperButton_Click);
+            this.showUpperLetters.Location = new System.Drawing.Point(50, 445);
+            this.showUpperLetters.Name = "showUpperLetters";
+            this.showUpperLetters.Size = new System.Drawing.Size(240, 52);
+            this.showUpperLetters.TabIndex = 9;
+            this.showUpperLetters.Text = "Upper Case";
+            this.showUpperLetters.UseVisualStyleBackColor = true;
+            this.showUpperLetters.Click += new System.EventHandler(this.showUpperLetters_Click_1);
             // 
-            // lowerButton
+            // showLowerLetters
             // 
-            this.lowerButton.Location = new System.Drawing.Point(768, 445);
-            this.lowerButton.Name = "lowerButton";
-            this.lowerButton.Size = new System.Drawing.Size(239, 48);
-            this.lowerButton.TabIndex = 10;
-            this.lowerButton.Text = "Lower Case";
-            this.lowerButton.UseVisualStyleBackColor = true;
-            this.lowerButton.Click += new System.EventHandler(this.lowerButton_Click);
+            this.showLowerLetters.Location = new System.Drawing.Point(768, 445);
+            this.showLowerLetters.Name = "showLowerLetters";
+            this.showLowerLetters.Size = new System.Drawing.Size(239, 48);
+            this.showLowerLetters.TabIndex = 10;
+            this.showLowerLetters.Text = "Lower Case";
+            this.showLowerLetters.UseVisualStyleBackColor = true;
+            this.showLowerLetters.Click += new System.EventHandler(this.showLowerLetters_Click_1);
             // 
-            // changemessageButton
+            // changeMessage
             // 
-            this.changemessageButton.Location = new System.Drawing.Point(554, 353);
-            this.changemessageButton.Name = "changemessageButton";
-            this.changemessageButton.Size = new System.Drawing.Size(201, 55);
-            this.changemessageButton.TabIndex = 11;
-            this.changemessageButton.Text = "Change";
-            this.changemessageButton.UseVisualStyleBackColor = true;
-            this.changemessageButton.Click += new System.EventHandler(this.changemessageButton_Click);
+            this.changeMessage.Location = new System.Drawing.Point(554, 353);
+            this.changeMessage.Name = "changeMessage";
+            this.changeMessage.Size = new System.Drawing.Size(201, 55);
+            this.changeMessage.TabIndex = 11;
+            this.changeMessage.Text = "Change";
+            this.changeMessage.UseVisualStyleBackColor = true;
+            this.changeMessage.Click += new System.EventHandler(this.changeMessage_Click_1);
             // 
             // townBox
             // 
@@ -180,7 +175,6 @@
             this.townBox.Name = "townBox";
             this.townBox.Size = new System.Drawing.Size(235, 34);
             this.townBox.TabIndex = 12;
-            
             // 
             // townLabel
             // 
@@ -199,10 +193,10 @@
             this.ClientSize = new System.Drawing.Size(1019, 520);
             this.Controls.Add(this.townLabel);
             this.Controls.Add(this.townBox);
-            this.Controls.Add(this.changemessageButton);
-            this.Controls.Add(this.lowerButton);
-            this.Controls.Add(this.upperButton);
-            this.Controls.Add(this.messageButton);
+            this.Controls.Add(this.changeMessage);
+            this.Controls.Add(this.showLowerLetters);
+            this.Controls.Add(this.showUpperLetters);
+            this.Controls.Add(this.showMessage);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.surnameBox);
             this.Controls.Add(this.firstnameBox);
@@ -216,7 +210,6 @@
             this.Name = "DataEntryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
-            this.Load += new System.EventHandler(this.dataEntryForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,10 +225,10 @@
         private System.Windows.Forms.TextBox firstnameBox;
         private System.Windows.Forms.TextBox surnameBox;
         private System.Windows.Forms.Button clearButton;
-        private System.Windows.Forms.Button messageButton;
-        private System.Windows.Forms.Button upperButton;
-        private System.Windows.Forms.Button lowerButton;
-        private System.Windows.Forms.Button changemessageButton;
+        private System.Windows.Forms.Button showMessage;
+        private System.Windows.Forms.Button showUpperLetters;
+        private System.Windows.Forms.Button showLowerLetters;
+        private System.Windows.Forms.Button changeMessage;
         private System.Windows.Forms.TextBox townBox;
         private System.Windows.Forms.Label townLabel;
     }

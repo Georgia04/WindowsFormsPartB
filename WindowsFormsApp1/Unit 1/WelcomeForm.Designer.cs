@@ -33,8 +33,8 @@
             this.greetingLabel = new System.Windows.Forms.Label();
             this.bragLabel = new System.Windows.Forms.Label();
             this.quitButton = new System.Windows.Forms.Button();
-            this.softwareButton = new System.Windows.Forms.Button();
-            this.computerButton = new System.Windows.Forms.Button();
+            this.showBestSoftware = new System.Windows.Forms.Button();
+            this.showBestComputer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // greetingLabel
@@ -49,7 +49,6 @@
             this.greetingLabel.TabIndex = 0;
             this.greetingLabel.Text = "Welcome To Supersoft";
             this.greetingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.greetingLabel.Click += new System.EventHandler(this.greetingLabel_Click);
             // 
             // bragLabel
             // 
@@ -63,7 +62,6 @@
             this.bragLabel.TabIndex = 1;
             this.bragLabel.Text = "The Best Prices";
             this.bragLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            
             // 
             // quitButton
             // 
@@ -75,25 +73,25 @@
             this.quitButton.UseVisualStyleBackColor = true;
             this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
             // 
-            // softwareButton
+            // showBestSoftware
             // 
-            this.softwareButton.Location = new System.Drawing.Point(42, 243);
-            this.softwareButton.Name = "softwareButton";
-            this.softwareButton.Size = new System.Drawing.Size(180, 40);
-            this.softwareButton.TabIndex = 3;
-            this.softwareButton.Text = "Best Software";
-            this.softwareButton.UseVisualStyleBackColor = true;
-            this.softwareButton.Click += new System.EventHandler(this.softwareButton_Click);
+            this.showBestSoftware.Location = new System.Drawing.Point(42, 243);
+            this.showBestSoftware.Name = "showBestSoftware";
+            this.showBestSoftware.Size = new System.Drawing.Size(180, 40);
+            this.showBestSoftware.TabIndex = 3;
+            this.showBestSoftware.Text = "Best Software";
+            this.showBestSoftware.UseVisualStyleBackColor = true;
+            this.showBestSoftware.Click += new System.EventHandler(this.showBestSoftware_Click_1);
             // 
-            // computerButton
+            // showBestComputer
             // 
-            this.computerButton.Location = new System.Drawing.Point(389, 243);
-            this.computerButton.Name = "computerButton";
-            this.computerButton.Size = new System.Drawing.Size(181, 40);
-            this.computerButton.TabIndex = 4;
-            this.computerButton.Text = "Best Computer";
-            this.computerButton.UseVisualStyleBackColor = true;
-            this.computerButton.Click += new System.EventHandler(this.btnShow1_Click);
+            this.showBestComputer.Location = new System.Drawing.Point(389, 243);
+            this.showBestComputer.Name = "showBestComputer";
+            this.showBestComputer.Size = new System.Drawing.Size(181, 40);
+            this.showBestComputer.TabIndex = 4;
+            this.showBestComputer.Text = "Best Computer";
+            this.showBestComputer.UseVisualStyleBackColor = true;
+            this.showBestComputer.Click += new System.EventHandler(this.showBestComputer_Click_1);
             // 
             // WelcomeForm
             // 
@@ -101,8 +99,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(892, 343);
-            this.Controls.Add(this.computerButton);
-            this.Controls.Add(this.softwareButton);
+            this.Controls.Add(this.showBestComputer);
+            this.Controls.Add(this.showBestSoftware);
             this.Controls.Add(this.quitButton);
             this.Controls.Add(this.bragLabel);
             this.Controls.Add(this.greetingLabel);
@@ -123,8 +121,8 @@
         private System.Windows.Forms.Label greetingLabel;
         private System.Windows.Forms.Label bragLabel;
         private System.Windows.Forms.Button quitButton;
-        private System.Windows.Forms.Button softwareButton;
-        private System.Windows.Forms.Button computerButton;
+        private System.Windows.Forms.Button showBestSoftware;
+        private System.Windows.Forms.Button showBestComputer;
     }
 }
 

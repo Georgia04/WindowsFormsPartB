@@ -22,29 +22,6 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void dataEntryForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void messageButton_Click(object sender, EventArgs e)
-        {
-            messageLabel.Text = "Hi " + firstnameBox.Text + " " +
-                surnameBox.Text + "\nHappy Programming " +
-                "\nEnjoy programming " + firstnameBox.Text;
-        }
-
-        private void upperButton_Click(object sender, EventArgs e)
-        {
-            messageLabel.Text = messageLabel.Text.ToUpper();
-
-        }
-
-        private void lowerButton_Click(object sender, EventArgs e)
-        {
-            messageLabel.Text = messageLabel.Text.ToLower();
-        }
-
         private void clearButton_Click(object sender, EventArgs e)
         {
             messageLabel.Text = "";
@@ -55,7 +32,14 @@ namespace WindowsFormsApp1
             Application.Exit();
         }
 
-        private void changemessageButton_Click(object sender, EventArgs e)
+        private void showMessage_Click_1(object sender, EventArgs e)
+        {
+            messageLabel.Text = "Hi " + firstnameBox.Text + " " +
+                surnameBox.Text + "\nHappy Programming " +
+                "\nEnjoy programming " + firstnameBox.Text;
+        }
+
+        private void changeMessage_Click_1(object sender, EventArgs e)
         {
             this.BackColor = Color.Green;
             firstnameBox.BackColor = Color.LightPink;
@@ -65,6 +49,16 @@ namespace WindowsFormsApp1
                 surnameBox.Text + "\nHappy Programming " +
                 "\nEnjoy programming " + firstnameBox.Text +
                 "\nGet on with it Georgia";
+        }
+
+        private void showUpperLetters_Click_1(object sender, EventArgs e)
+        {
+            messageLabel.Text = messageLabel.Text.ToUpper();
+        }
+
+        private void showLowerLetters_Click_1(object sender, EventArgs e)
+        {
+            messageLabel.Text = messageLabel.Text.ToLower();
         }
     }
 }

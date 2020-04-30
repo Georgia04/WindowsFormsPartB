@@ -10,6 +10,10 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
+    /// <summary>
+    /// This form terminates the calculator form
+    /// Author: Georgia
+    /// </summary>
     public partial class CloseScreen : Form
     {
         public CloseScreen()
@@ -17,17 +21,12 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void closeScreen_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void closeButton_Click(object sender, EventArgs e)
+        private void closeForm_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void messageLabel_Click(object sender, EventArgs e)
         {
             this.Close();
         }
