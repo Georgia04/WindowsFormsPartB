@@ -41,15 +41,17 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.labelTotalHits = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.labelResult = new System.Windows.Forms.Label();
+            this.messageLabel = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -64,6 +66,7 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
             // 
             // startForm
             // 
@@ -75,7 +78,7 @@
             this.startForm.TabIndex = 1;
             this.startForm.Text = "Start";
             this.startForm.UseVisualStyleBackColor = false;
-            this.startForm.Click += new System.EventHandler(this.startForm_Click);
+            this.startForm.Click += new System.EventHandler(this.startTimer);
             // 
             // stopForm
             // 
@@ -88,7 +91,7 @@
             this.stopForm.TabIndex = 2;
             this.stopForm.Text = "Stop";
             this.stopForm.UseVisualStyleBackColor = false;
-            this.stopForm.Click += new System.EventHandler(this.stopForm_Click);
+            this.stopForm.Click += new System.EventHandler(this.stopTimer);
             // 
             // quitForm
             // 
@@ -105,22 +108,22 @@
             // timer1
             // 
             this.timer1.Interval = 3000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timer1.Tick += new System.EventHandler(this.moveMonkey1);
             // 
             // timer2
             // 
             this.timer2.Interval = 3000;
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            this.timer2.Tick += new System.EventHandler(this.moveMonkey2);
             // 
             // timer3
             // 
             this.timer3.Interval = 3000;
-            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
+            this.timer3.Tick += new System.EventHandler(this.moveMonkey3);
             // 
             // timer4
             // 
             this.timer4.Interval = 3000;
-            this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
+            this.timer4.Tick += new System.EventHandler(this.moveMonkey4);
             // 
             // groupBox1
             // 
@@ -133,6 +136,7 @@
             // 
             // labelTotalHits
             // 
+            this.labelTotalHits.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.labelTotalHits.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.labelTotalHits.Location = new System.Drawing.Point(19, 29);
             this.labelTotalHits.Name = "labelTotalHits";
@@ -147,35 +151,25 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(-1, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(873, 505);
+            this.panel1.Size = new System.Drawing.Size(873, 429);
             this.panel1.TabIndex = 8;
             this.panel1.Click += new System.EventHandler(this.panel1_Click);
             // 
-            // pictureBox4
+            // labelResult
             // 
-            this.pictureBox4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(647, 34);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(105, 132);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 11;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click_1);
+            this.labelResult.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.labelResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.labelResult.Location = new System.Drawing.Point(41, 465);
+            this.labelResult.Name = "labelResult";
+            this.labelResult.Size = new System.Drawing.Size(215, 48);
+            this.labelResult.TabIndex = 13;
             // 
-            // pictureBox2
+            // messageLabel
             // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(339, 52);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(105, 132);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
+            this.messageLabel.Location = new System.Drawing.Point(323, 456);
+            this.messageLabel.Name = "messageLabel";
+            this.messageLabel.Size = new System.Drawing.Size(186, 57);
+            this.messageLabel.TabIndex = 12;
             // 
             // pictureBox3
             // 
@@ -188,7 +182,31 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 10;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click_1);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(647, 34);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(105, 132);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 11;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(339, 52);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(105, 132);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.clickMonkeyBash);
             // 
             // MonkeyBashForm
             // 
@@ -199,6 +217,8 @@
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.CancelButton = this.stopForm;
             this.ClientSize = new System.Drawing.Size(868, 605);
+            this.Controls.Add(this.messageLabel);
+            this.Controls.Add(this.labelResult);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.quitForm);
@@ -211,13 +231,14 @@
             this.Name = "MonkeyBashForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Georgia\'s Monkey Bash";
-            this.Load += new System.EventHandler(this.MonkeyBashForm_Load);
+            this.Click += new System.EventHandler(this.clickMonkeyBash);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MonkeyBashForm_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -238,5 +259,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label messageLabel;
+        private System.Windows.Forms.Label labelResult;
     }
 }

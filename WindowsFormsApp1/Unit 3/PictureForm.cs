@@ -15,7 +15,6 @@ namespace WindowsFormsApp1
     /// when user choose a monster.
     /// Author: Georgia
     /// </summary>
-    
     public partial class PictureForm : Form
     {
         public PictureForm()
@@ -23,7 +22,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void comboChoice_SelectedIndexChanged(object sender, EventArgs e)
+        private void chooseImage(object sender, EventArgs e)
         {
             if (comboChoice.Text == "Alien")
             {

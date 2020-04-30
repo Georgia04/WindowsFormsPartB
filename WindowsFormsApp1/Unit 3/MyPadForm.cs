@@ -42,11 +42,6 @@ namespace WindowsFormsApp1
             textMain.Undo();
         }
 
-        private void MyPadForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -63,24 +58,19 @@ namespace WindowsFormsApp1
             textMain.LoadFile(ofd.FileName);
         }
 
-        private void fd_Apply(object sender, EventArgs e)
-        {
-
-        }
-
         private void fontToolStripMenuItem_Click(object sender, EventArgs e)
         {
             fd.ShowDialog();
             textMain.Font = fd.Font;
         }
 
-        private void foregroundColourToolStripMenuItem_Click(object sender, EventArgs e)
+        private void foreColourToolStripMenuItem_Click(object sender, EventArgs e)
         {
             cd.ShowDialog();
             textMain.ForeColor = cd.Color;
         }
 
-        private void backgroundColourToolStripMenuItem_Click(object sender, EventArgs e)
+        private void backColourToolStripMenuItem_Click(object sender, EventArgs e)
         {
             cd.ShowDialog();
             textMain.BackColor = cd.Color;

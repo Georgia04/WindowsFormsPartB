@@ -141,7 +141,6 @@ namespace WindowsFormsApp1
         /// <summary>
         /// The scores are compared, the result is shown with an image.
         /// </summary>
-
         public void CheckGameWinner() 
         {
             if (PlayerScore > ComputerScore)
@@ -165,8 +164,8 @@ namespace WindowsFormsApp1
 
             }
         }
-     }
-  }
+    }
+}
 
         
     

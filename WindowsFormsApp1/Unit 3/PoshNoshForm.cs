@@ -30,7 +30,7 @@ namespace WindowsFormsApp1
             Application.Exit();
         }
 
-        private void dessertMenu_SelectedIndexChanged(object sender, EventArgs e)
+        private void selectDesertMenu(object sender, EventArgs e)
         {
             switch (dessertMenu.Text) 
             {
@@ -43,7 +43,7 @@ namespace WindowsFormsApp1
             FinalCost.Text = "£ " + totalcost.ToString("0.00");
         }
 
-        private void mainMenu_SelectedIndexChanged(object sender, EventArgs e)
+        private void selectMainMenu(object sender, EventArgs e)
         {
             switch (mainMenu.Text) 
             {
@@ -54,10 +54,9 @@ namespace WindowsFormsApp1
             }
             totalcost = mainmenucost + startercost + dessertcost;
             FinalCost.Text = "£ " + totalcost.ToString("0.00");
-
         }
 
-        private void starterMenu_SelectedIndexChanged(object sender, EventArgs e)
+        private void selectStarterMenu(object sender, EventArgs e)
         {
             switch (starterMenu.Text) 
             {
@@ -68,7 +67,6 @@ namespace WindowsFormsApp1
             }
             totalcost = mainmenucost + startercost + dessertcost;
             FinalCost.Text = "£ " + totalcost.ToString("0.00");
-
         }
     }
 }

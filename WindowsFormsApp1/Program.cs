@@ -22,10 +22,10 @@ namespace WindowsFormsApp1
            //Application.Run(new GameUI());
             //Application.Run(new WelcomeForm());
             //Application.Run(new DataEntryForm());
-            Application.Run(new CalculatorForm());
+            //Application.Run(new CalculatorForm());
             //Application.Run(new SplashscreenForm());
             //Application.Run(new CurrencyconverterForm());
-            //Application.Run(new PizzaShopForm());
+           //Application.Run(new PizzaShopForm());
             //Application.Run(new PoshNoshForm());
             //Application.Run(new MonkeyBashForm());
             //Application.Run(new MyPadForm());
@@ -36,7 +36,7 @@ namespace WindowsFormsApp1
             //Application.Run(new DataEntryForm2());
             //Application.Run(new CheckBillForm());
             //Application.Run(new TotalsForm());
-            Application.Run(new CalculatorForm2());
+            //Application.Run(new CalculatorForm2());
         }
     }
 }

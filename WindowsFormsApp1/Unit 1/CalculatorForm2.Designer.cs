@@ -43,13 +43,13 @@
             this.clearNumbers = new System.Windows.Forms.Button();
             this.calculateAverage = new System.Windows.Forms.Button();
             this.addPicture = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.substractPicture = new System.Windows.Forms.PictureBox();
+            this.multiplyPicture = new System.Windows.Forms.PictureBox();
+            this.dividePicture = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.addPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.substractPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.multiplyPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dividePicture)).BeginInit();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -183,40 +183,40 @@
             this.addPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.addPicture.TabIndex = 13;
             this.addPicture.TabStop = false;
-         
+           
             // 
-            // pictureBox2
+            // substractPicture
             // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(792, 173);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(81, 74);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 14;
-            this.pictureBox2.TabStop = false;
+            this.substractPicture.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.substractPicture.Image = ((System.Drawing.Image)(resources.GetObject("substractPicture.Image")));
+            this.substractPicture.Location = new System.Drawing.Point(792, 173);
+            this.substractPicture.Name = "substractPicture";
+            this.substractPicture.Size = new System.Drawing.Size(81, 74);
+            this.substractPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.substractPicture.TabIndex = 14;
+            this.substractPicture.TabStop = false;
             // 
-            // pictureBox3
+            // multiplyPicture
             // 
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(655, 272);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(80, 74);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 15;
-            this.pictureBox3.TabStop = false;
+            this.multiplyPicture.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.multiplyPicture.Image = ((System.Drawing.Image)(resources.GetObject("multiplyPicture.Image")));
+            this.multiplyPicture.Location = new System.Drawing.Point(655, 272);
+            this.multiplyPicture.Name = "multiplyPicture";
+            this.multiplyPicture.Size = new System.Drawing.Size(80, 74);
+            this.multiplyPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.multiplyPicture.TabIndex = 15;
+            this.multiplyPicture.TabStop = false;
             // 
-            // pictureBox4
+            // dividePicture
             // 
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(792, 272);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(81, 74);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 16;
-            this.pictureBox4.TabStop = false;
+            this.dividePicture.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dividePicture.Image = ((System.Drawing.Image)(resources.GetObject("dividePicture.Image")));
+            this.dividePicture.Location = new System.Drawing.Point(792, 272);
+            this.dividePicture.Name = "dividePicture";
+            this.dividePicture.Size = new System.Drawing.Size(81, 74);
+            this.dividePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.dividePicture.TabIndex = 16;
+            this.dividePicture.TabStop = false;
             // 
             // CalculatorForm2
             // 
@@ -224,9 +224,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Orange;
             this.ClientSize = new System.Drawing.Size(992, 676);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.dividePicture);
+            this.Controls.Add(this.multiplyPicture);
+            this.Controls.Add(this.substractPicture);
             this.Controls.Add(this.addPicture);
             this.Controls.Add(this.calculateAverage);
             this.Controls.Add(this.clearNumbers);
@@ -244,9 +244,9 @@
             this.Name = "CalculatorForm2";
             this.Text = "Georgia\'s Calculator 2";
             ((System.ComponentModel.ISupportInitialize)(this.addPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.substractPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.multiplyPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dividePicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -268,8 +268,8 @@
         private System.Windows.Forms.Button clearNumbers;
         private System.Windows.Forms.Button calculateAverage;
         public System.Windows.Forms.PictureBox addPicture;
-        public System.Windows.Forms.PictureBox pictureBox2;
-        public System.Windows.Forms.PictureBox pictureBox3;
-        public System.Windows.Forms.PictureBox pictureBox4;
+        public System.Windows.Forms.PictureBox substractPicture;
+        public System.Windows.Forms.PictureBox multiplyPicture;
+        public System.Windows.Forms.PictureBox dividePicture;
     }
 }

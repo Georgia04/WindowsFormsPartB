@@ -21,11 +21,6 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void rPS_Splash_Screen_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void clickGame_Click(object sender, EventArgs e)
         {
             this.Close();

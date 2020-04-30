@@ -56,7 +56,7 @@
             this.Name = "RPSsplashscreenForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RPS_Splash_Screen Form";
-            this.Load += new System.EventHandler(this.rPS_Splash_Screen_Load);
+            
             this.Click += new System.EventHandler(this.rSPsplashscreenForm_Click);
             this.ResumeLayout(false);
             this.PerformLayout();

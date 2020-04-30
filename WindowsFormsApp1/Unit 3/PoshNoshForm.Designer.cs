@@ -72,7 +72,7 @@
             this.starterMenu.Size = new System.Drawing.Size(292, 178);
             this.starterMenu.Sorted = true;
             this.starterMenu.TabIndex = 0;
-            this.starterMenu.SelectedIndexChanged += new System.EventHandler(this.starterMenu_SelectedIndexChanged);
+            this.starterMenu.SelectedIndexChanged += new System.EventHandler(this.selectStarterMenu);
             // 
             // mainmenuCost
             // 
@@ -100,7 +100,7 @@
             this.mainMenu.Size = new System.Drawing.Size(279, 178);
             this.mainMenu.Sorted = true;
             this.mainMenu.TabIndex = 0;
-            this.mainMenu.SelectedIndexChanged += new System.EventHandler(this.mainMenu_SelectedIndexChanged);
+            this.mainMenu.SelectedIndexChanged += new System.EventHandler(this.selectMainMenu);
             // 
             // totalCost
             // 
@@ -146,7 +146,7 @@
             this.dessertMenu.Size = new System.Drawing.Size(270, 37);
             this.dessertMenu.TabIndex = 0;
             this.dessertMenu.Text = "Dessert Choices";
-            this.dessertMenu.SelectedIndexChanged += new System.EventHandler(this.dessertMenu_SelectedIndexChanged);
+            this.dessertMenu.SelectedIndexChanged += new System.EventHandler(this.selectDesertMenu);
             // 
             // quitForm
             // 

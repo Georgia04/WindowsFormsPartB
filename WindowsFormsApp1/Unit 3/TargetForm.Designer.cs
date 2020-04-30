@@ -35,10 +35,11 @@
             this.startForm = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.resultsBox = new System.Windows.Forms.GroupBox();
+            this.scoreLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.scoreLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelResult = new System.Windows.Forms.Label();
             this.resultsBox.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -80,7 +81,7 @@
             // timer1
             // 
             this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timer1.Tick += new System.EventHandler(this.moveTarget);
             // 
             // resultsBox
             // 
@@ -95,6 +96,15 @@
             this.resultsBox.TabStop = false;
             this.resultsBox.Text = "Results";
             // 
+            // scoreLabel
+            // 
+            this.scoreLabel.AutoSize = true;
+            this.scoreLabel.Location = new System.Drawing.Point(11, 102);
+            this.scoreLabel.Name = "scoreLabel";
+            this.scoreLabel.Size = new System.Drawing.Size(86, 29);
+            this.scoreLabel.TabIndex = 1;
+            this.scoreLabel.Text = "Score:";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -107,22 +117,13 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.labelResult);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(579, 446);
             this.panel1.TabIndex = 5;
             this.panel1.Click += new System.EventHandler(this.panel1_Click);
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // scoreLabel
-            // 
-            this.scoreLabel.AutoSize = true;
-            this.scoreLabel.Location = new System.Drawing.Point(11, 102);
-            this.scoreLabel.Name = "scoreLabel";
-            this.scoreLabel.Size = new System.Drawing.Size(86, 29);
-            this.scoreLabel.TabIndex = 1;
-            this.scoreLabel.Text = "Score:";
             // 
             // pictureBox1
             // 
@@ -135,7 +136,17 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
             this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseUp);
+            // 
+            // labelResult
+            // 
+            this.labelResult.BackColor = System.Drawing.Color.Blue;
+            this.labelResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.labelResult.Location = new System.Drawing.Point(3, 406);
+            this.labelResult.Name = "labelResult";
+            this.labelResult.Size = new System.Drawing.Size(282, 40);
+            this.labelResult.TabIndex = 2;
             // 
             // TargetForm
             // 
@@ -150,7 +161,6 @@
             this.Controls.Add(this.quitForm);
             this.Name = "TargetForm";
             this.Text = "Georgia\'s Target Game";
-            this.Load += new System.EventHandler(this.TargetForm_Load);
             this.resultsBox.ResumeLayout(false);
             this.resultsBox.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -169,5 +179,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label scoreLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label labelResult;
     }
 }

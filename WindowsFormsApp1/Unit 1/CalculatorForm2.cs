@@ -19,7 +19,7 @@ namespace WindowsFormsApp1
     {
         public CalculatorForm2()
         {
-            InitializeComponent();
+        InitializeComponent();
         }
 
         private void raiseToPower_Click(object sender, EventArgs e)

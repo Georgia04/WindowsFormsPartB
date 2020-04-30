@@ -90,7 +90,7 @@
             this.radioRupees.TabStop = true;
             this.radioRupees.Text = "Rupees";
             this.radioRupees.UseVisualStyleBackColor = true;
-            this.radioRupees.CheckedChanged += new System.EventHandler(this.radioRupees_CheckedChanged);
+            this.radioRupees.CheckedChanged += new System.EventHandler(this.calculateRupees);
             // 
             // radioEuros
             // 
@@ -103,7 +103,7 @@
             this.radioEuros.TabStop = true;
             this.radioEuros.Text = "Euros";
             this.radioEuros.UseVisualStyleBackColor = true;
-            this.radioEuros.CheckedChanged += new System.EventHandler(this.radioEuros_CheckedChanged);
+            this.radioEuros.CheckedChanged += new System.EventHandler(this.calculateDollars);
             // 
             // radioDollars
             // 
@@ -116,7 +116,7 @@
             this.radioDollars.TabStop = true;
             this.radioDollars.Text = "Dollars";
             this.radioDollars.UseVisualStyleBackColor = true;
-            this.radioDollars.CheckedChanged += new System.EventHandler(this.radioDollars_CheckedChanged);
+            this.radioDollars.CheckedChanged += new System.EventHandler(this.calculateDollars);
             // 
             // quitButton
             // 
@@ -175,7 +175,7 @@
             this.Name = "CurrencyconverterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Georgia\'s Currency Converter";
-            this.Load += new System.EventHandler(this.currencyconverterForm_Load);
+            
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);

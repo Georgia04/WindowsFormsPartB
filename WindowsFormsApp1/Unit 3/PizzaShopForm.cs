@@ -25,12 +25,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void pizzaShopForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void largeRadio_CheckedChanged(object sender, EventArgs e)
+        private void calculateLarge(object sender, EventArgs e)
         {
             if (largeRadio.Checked)
             {
@@ -41,7 +36,7 @@ namespace WindowsFormsApp1
 
         }
 
-        private void mediumRadio_CheckedChanged(object sender, EventArgs e)
+        private void calaculateMedium(object sender, EventArgs e)
         {
             if (mediumRadio.Checked)
             {
@@ -52,7 +47,7 @@ namespace WindowsFormsApp1
 
         }
 
-        private void smallRadio_CheckedChanged(object sender, EventArgs e)
+        private void calculateSmall(object sender, EventArgs e)
         {
             if (smallRadio.Checked)
             {
@@ -63,7 +58,7 @@ namespace WindowsFormsApp1
 
         }
 
-        private void pineapple_CheckedChanged(object sender, EventArgs e)
+        private void calculatePineapple(object sender, EventArgs e)
         {
             if (pineapple.Checked)
             {
@@ -77,7 +72,7 @@ namespace WindowsFormsApp1
             finalPrice.Text = "£ " + endCost.ToString("0.00");
         }
 
-        private void rhubarb_CheckedChanged(object sender, EventArgs e)
+        private void calculateRhubarb(object sender, EventArgs e)
         {
             if (rhubarb.Checked)
             {
@@ -91,7 +86,7 @@ namespace WindowsFormsApp1
             finalPrice.Text = "£ " + endCost.ToString("0.00");
         }
 
-        private void pepperoniVindaloo_CheckedChanged(object sender, EventArgs e)
+        private void calculatePepperoniVindaloo(object sender, EventArgs e)
         {
             if (pepperoniVindaloo.Checked)
             {
@@ -105,7 +100,7 @@ namespace WindowsFormsApp1
             finalPrice.Text = "£ " + endCost.ToString("0.00");
         }
 
-        private void chocolate_CheckedChanged(object sender, EventArgs e)
+        private void calculateChocolate(object sender, EventArgs e)
         {
             if (chocolate.Checked)
             {
@@ -119,13 +114,7 @@ namespace WindowsFormsApp1
             finalPrice.Text = "£ " + endCost.ToString("0.00");
         }
 
-        private void pizzaPrice_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void bbq_CheckedChanged(object sender, EventArgs e)
+        private void calculateBBQ(object sender, EventArgs e)
         {
             if (bbq.Checked)
             {

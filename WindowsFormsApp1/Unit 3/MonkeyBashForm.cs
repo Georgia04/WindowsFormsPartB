@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace WindowsFormsApp1
 {
     /// <summary>
-    /// This form moves a monkey and shows a message
+    /// This form moves a monkey, shows a message, hits and misses
     /// when the monkey is clicked
     /// author:Georgia
     /// </summary>
@@ -28,15 +28,10 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void MonkeyBashForm_Load(object sender, EventArgs e)
+        private void moveMonkey1(object sender, EventArgs e)
         {
-            
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            x = generator.Next(panel1.Width - 200);
-            y = generator.Next(panel1.Height - 200);
+            x = generator.Next(panel1.Width - 100);
+            y = generator.Next(panel1.Height - 100);
 
             pictureBox1.Left = x;
             pictureBox1.Top = y;
@@ -45,10 +40,10 @@ namespace WindowsFormsApp1
             Refresh();
         }
 
-        private void timer2_Tick(object sender, EventArgs e)
+        private void moveMonkey2(object sender, EventArgs e)
         {
-            x = generator.Next(panel1.Width - 200);
-            y = generator.Next(panel1.Height - 200);
+            x = generator.Next(panel1.Width - 100);
+            y = generator.Next(panel1.Height - 100);
 
             pictureBox2.Left = x;
             pictureBox2.Top = y;
@@ -58,10 +53,10 @@ namespace WindowsFormsApp1
             Refresh();
         }
 
-        private void timer3_Tick(object sender, EventArgs e)
+        private void moveMonkey3(object sender, EventArgs e)
         {
-            x = generator.Next(panel1.Width - 200);
-            y = generator.Next(panel1.Height - 200);
+            x = generator.Next(panel1.Width - 100);
+            y = generator.Next(panel1.Height - 100);
 
             pictureBox3.Left = x;
             pictureBox3.Top = y;
@@ -71,10 +66,10 @@ namespace WindowsFormsApp1
             Refresh();
         }
 
-        private void timer4_Tick(object sender, EventArgs e)
+        private void moveMonkey4(object sender, EventArgs e)
         {
-            x = generator.Next(panel1.Width - 200);
-            y = generator.Next(panel1.Height - 200);
+            x = generator.Next(panel1.Width - 100);
+            y = generator.Next(panel1.Height - 100);
 
             pictureBox4.Left = x;
             pictureBox4.Top = y;
@@ -90,8 +85,7 @@ namespace WindowsFormsApp1
             hits = hits + 1;
         }
 
-
-        private void startForm_Click(object sender, EventArgs e)
+        private void startTimer(object sender, EventArgs e)
         {
             timer1.Enabled = true;
             timer2.Enabled = true;
@@ -99,7 +93,7 @@ namespace WindowsFormsApp1
             timer4.Enabled = true;
         }
 
-        private void stopForm_Click(object sender, EventArgs e)
+        private void stopTimer(object sender, EventArgs e)
         {
             timer1.Enabled= false;
             timer2.Enabled = false;
@@ -115,25 +109,32 @@ namespace WindowsFormsApp1
         private void panel1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("You MISSED!");
-            misses = misses + 1;
+             misses = misses + 1;
         }
 
-        private void pictureBox2_Click_1(object sender, EventArgs e)
+        private void pictureBox1_Click_1(object sender, EventArgs e)
         {
             MessageBox.Show("Ouch!");
             hits = hits + 1;
         }
 
-        private void pictureBox4_Click_1(object sender, EventArgs e)
+        private void MonkeyBashForm_MouseDown(object sender, MouseEventArgs e)
         {
-            MessageBox.Show("Ouch!");
-            hits = hits + 1;
+            messageLabel.Text = "(" + e.X + "," + e.Y + ")";
         }
 
-        private void pictureBox3_Click_1(object sender, EventArgs e)
+        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
-            MessageBox.Show("Ouch!");
-            hits = hits + 1;
+            double a, b;
+
+            a = Math.Pow((e.X - 50), 2);
+            b = Math.Pow((e.Y - 50), 2);
+            labelResult.Text = "You Score: " + (100 - Math.Sqrt(a + b)).ToString("0.00");
+        }
+
+        private void clickMonkeyBash(object sender, EventArgs e)
+        {
+            misses++;
         }
     }
 }

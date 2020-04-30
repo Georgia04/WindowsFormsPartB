@@ -29,11 +29,6 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void TargetForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void stopForm_Click(object sender, EventArgs e)
         {
             timer1.Enabled = false;
@@ -116,9 +111,13 @@ namespace WindowsFormsApp1
             misses = misses + 1;
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
+            double a, b;
 
+            a = Math.Pow((e.X - 50), 2);
+            b = Math.Pow((e.Y - 50), 2);
+            labelResult.Text = "You Score: " + (100 - Math.Sqrt(a + b)).ToString("0.00");
         }
 
         private void startForm_Click(object sender, EventArgs e)
@@ -126,7 +125,7 @@ namespace WindowsFormsApp1
             timer1.Enabled = true;
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void moveTarget(object sender, EventArgs e)
         {
             x = generator.Next(panel1.Width - 200);
             y = generator.Next(panel1.Height - 200);

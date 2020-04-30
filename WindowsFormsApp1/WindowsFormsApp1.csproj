@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalculatorForm2.cs">
+    <Compile Include="Unit 1\CalculatorForm2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CalculatorForm2.Designer.cs">
+    <Compile Include="Unit 1\CalculatorForm2.Designer.cs">
       <DependentUpon>CalculatorForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPSExitSplashScreenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPSExitSplashScreenForm.Designer.cs">
+      <DependentUpon>RPSExitSplashScreenForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Unit 4\CheckBillForm.cs">
       <SubType>Form</SubType>
@@ -169,7 +175,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CalculatorForm2.resx">
+    <EmbeddedResource Include="Unit 1\CalculatorForm2.resx">
       <DependentUpon>CalculatorForm2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Unit 4\CheckBillForm.resx">
@@ -269,7 +275,7 @@
     <Content Include="Calculator Images\divide.png" />
     <Content Include="Calculator Images\multiply.png" />
     <Content Include="Calculator Images\Plus.png" />
-    <Content Include="Calculator Images\substarct.jpeg" />
+    <Content Include="Calculator Images\substract.jpeg" />
     <Content Include="Monsters Images\alien.gif" />
     <Content Include="Monsters Images\Dragon.gif" />
     <Content Include="Monsters Images\Hydra.gif" />

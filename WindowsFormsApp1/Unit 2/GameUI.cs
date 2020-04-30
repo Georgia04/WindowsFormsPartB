@@ -26,11 +26,6 @@ namespace WindowsFormsApp1
             game.Start("Georgia");
         }
 
-        private void resultForm_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void loadScissorsImage(object sender, EventArgs e)
         {
             userPictureBox.Image = Image.FromFile("Scissors.jpg");
@@ -41,12 +36,12 @@ namespace WindowsFormsApp1
             Close();
         }
 
-        private void paperForm_CheckedChanged(object sender, EventArgs e)
+        private void loadPaperImage(object sender, EventArgs e)
         {
             userPictureBox.Image = Image.FromFile("Paper.jpg");
         }
 
-        private void rockForm_CheckedChanged(object sender, EventArgs e)
+        private void loadRockImage(object sender, EventArgs e)
         {
             userPictureBox.Image = Image.FromFile("Stone.jpg");
         }
@@ -102,12 +97,22 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void gameUI_Load(object sender, EventArgs e)
+        private void showSplashScreen(object sender, EventArgs e)
         {
             RPSsplashscreenForm RPSsplashscreen = new RPSsplashscreenForm();
             RPSsplashscreen.ShowDialog();
             System.Threading.Thread.Sleep(2000);
             RPSsplashscreen.Close();
+        }
+
+        // This form shows exit splash screen 
+        private void showExitSplashScreen(object sender, EventArgs e) 
+        {
+            RPSsplashscreenForm exitsplash = new RPSsplashscreenForm();
+            if (game.ComputerScore > game.PlayerScore) 
+            {
+                
+            }
         }
     }
 }

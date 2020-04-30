@@ -59,7 +59,7 @@
             this.pizzaPrice.TabIndex = 1;
             this.pizzaPrice.TabStop = false;
             this.pizzaPrice.Text = "Pizza Type";
-            this.pizzaPrice.Enter += new System.EventHandler(this.pizzaPrice_Enter);
+            
             // 
             // smallRadio
             // 
@@ -72,7 +72,7 @@
             this.smallRadio.TabStop = true;
             this.smallRadio.Text = "Small";
             this.smallRadio.UseVisualStyleBackColor = true;
-            this.smallRadio.CheckedChanged += new System.EventHandler(this.smallRadio_CheckedChanged);
+            this.smallRadio.CheckedChanged += new System.EventHandler(this.calculateSmall);
             // 
             // mediumRadio
             // 
@@ -85,7 +85,7 @@
             this.mediumRadio.TabStop = true;
             this.mediumRadio.Text = "Medium";
             this.mediumRadio.UseVisualStyleBackColor = true;
-            this.mediumRadio.CheckedChanged += new System.EventHandler(this.mediumRadio_CheckedChanged);
+            this.mediumRadio.CheckedChanged += new System.EventHandler(this.calaculateMedium);
             // 
             // largeRadio
             // 
@@ -98,7 +98,7 @@
             this.largeRadio.TabStop = true;
             this.largeRadio.Text = "Large";
             this.largeRadio.UseVisualStyleBackColor = true;
-            this.largeRadio.CheckedChanged += new System.EventHandler(this.largeRadio_CheckedChanged);
+            this.largeRadio.CheckedChanged += new System.EventHandler(this.calculateLarge);
             // 
             // endPrice
             // 
@@ -148,7 +148,7 @@
             this.bbq.TabIndex = 4;
             this.bbq.Text = "BBQ";
             this.bbq.UseVisualStyleBackColor = true;
-            this.bbq.CheckedChanged += new System.EventHandler(this.bbq_CheckedChanged);
+            this.bbq.CheckedChanged += new System.EventHandler(this.calculateBBQ);
             // 
             // chocolate
             // 
@@ -159,7 +159,7 @@
             this.chocolate.TabIndex = 3;
             this.chocolate.Text = "Chocolate";
             this.chocolate.UseVisualStyleBackColor = true;
-            this.chocolate.CheckedChanged += new System.EventHandler(this.chocolate_CheckedChanged);
+            this.chocolate.CheckedChanged += new System.EventHandler(this.calculateChocolate);
             // 
             // pepperoniVindaloo
             // 
@@ -170,7 +170,7 @@
             this.pepperoniVindaloo.TabIndex = 2;
             this.pepperoniVindaloo.Text = "Pepperoni Vindaloo";
             this.pepperoniVindaloo.UseVisualStyleBackColor = true;
-            this.pepperoniVindaloo.CheckedChanged += new System.EventHandler(this.pepperoniVindaloo_CheckedChanged);
+            this.pepperoniVindaloo.CheckedChanged += new System.EventHandler(this.calculatePepperoniVindaloo);
             // 
             // rhubarb
             // 
@@ -181,7 +181,7 @@
             this.rhubarb.TabIndex = 1;
             this.rhubarb.Text = "Rhubarb";
             this.rhubarb.UseVisualStyleBackColor = true;
-            this.rhubarb.CheckedChanged += new System.EventHandler(this.rhubarb_CheckedChanged);
+            this.rhubarb.CheckedChanged += new System.EventHandler(this.calculateRhubarb);
             // 
             // pineapple
             // 
@@ -192,7 +192,7 @@
             this.pineapple.TabIndex = 0;
             this.pineapple.Text = "Pineapple";
             this.pineapple.UseVisualStyleBackColor = true;
-            this.pineapple.CheckedChanged += new System.EventHandler(this.pineapple_CheckedChanged);
+            this.pineapple.CheckedChanged += new System.EventHandler(this.calculatePineapple);
             // 
             // quitButton
             // 
@@ -217,7 +217,7 @@
             this.Controls.Add(this.pizzaPrice);
             this.Name = "PizzaShopForm";
             this.Text = "Georgia\'s Pizza Shop";
-            this.Load += new System.EventHandler(this.pizzaShopForm_Load);
+            
             this.pizzaPrice.ResumeLayout(false);
             this.pizzaPrice.PerformLayout();
             this.endPrice.ResumeLayout(false);

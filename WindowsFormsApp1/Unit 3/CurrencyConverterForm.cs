@@ -22,26 +22,21 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void currencyconverterForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioDollars_CheckedChanged(object sender, EventArgs e)
+        private void calculateDollars(object sender, EventArgs e)
         {
             double amount;
             amount = Convert.ToDouble(UKPounds.Text) * 1.6;
             convertAmount.Text = amount.ToString() + " Dollars";
         }
 
-        private void radioEuros_CheckedChanged(object sender, EventArgs e)
+        private void calculateEuros(object sender, EventArgs e)
         {
             double amount;
             amount = Convert.ToDouble(UKPounds.Text) * 1.9;
             convertAmount.Text = amount.ToString() + " Euros";
         }
 
-        private void radioRupees_CheckedChanged(object sender, EventArgs e)
+        private void calculateRupees(object sender, EventArgs e)
         {
             double amount;
             amount = Convert.ToDouble(UKPounds.Text) * 60;
@@ -60,7 +55,6 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Cancelled");
 
             }
-
         }
     }
 }

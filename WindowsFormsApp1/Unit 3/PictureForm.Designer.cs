@@ -50,7 +50,7 @@
             this.comboChoice.Size = new System.Drawing.Size(161, 28);
             this.comboChoice.TabIndex = 0;
             this.comboChoice.Text = "Choose Monster";
-            this.comboChoice.SelectedIndexChanged += new System.EventHandler(this.comboChoice_SelectedIndexChanged);
+            this.comboChoice.SelectedIndexChanged += new System.EventHandler(this.chooseImage);
             // 
             // pictureChoice
             // 

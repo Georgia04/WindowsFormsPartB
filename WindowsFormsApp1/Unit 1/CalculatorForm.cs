@@ -17,15 +17,9 @@ namespace WindowsFormsApp1
     /// </summary>
     public partial class CalculatorForm : Form
     {
-        Image image1;
-        Image image2;
-        Image image3;
-        Image image4;
-
         public CalculatorForm()
         {
-            image1 = Image.FromFile();
-            InitializeComponent();
+         InitializeComponent();
         }
 
         private void calculatorForm_Load_1(object sender, EventArgs e)
@@ -38,12 +32,12 @@ namespace WindowsFormsApp1
 
         private void addNumbers(object sender, EventArgs e)
         {
-            CalculatorForm2 form2 = new CalculatorForm2();
-
             Double number1, number2, result;
             number1 = Convert.ToDouble(firstnumBox.Text);
             number2 = Convert.ToDouble(secnumBox.Text);
             result = number1 + number2;
+            this.BackColor = Color.LightCyan;
+
             numresultLabel.Text = result.ToString();
         }
 
@@ -53,6 +47,8 @@ namespace WindowsFormsApp1
             number1 = Convert.ToDouble(firstnumBox.Text);
             number2 = Convert.ToDouble(secnumBox.Text);
             result = number1 - number2;
+            this.BackColor = Color.Red;
+            
             numresultLabel.Text = result.ToString();
         }
 
@@ -62,6 +58,8 @@ namespace WindowsFormsApp1
             number1 = Convert.ToDouble(firstnumBox.Text);
             number2 = Convert.ToDouble(secnumBox.Text);
             result = number1 * number2;
+            this.BackColor = Color.Yellow;
+
             numresultLabel.Text = result.ToString();
         }
 
@@ -77,6 +75,8 @@ namespace WindowsFormsApp1
             else
             {
                 result = number1 / number2;
+                this.BackColor = Color.Pink;
+
                 numresultLabel.Text = result.ToString();
             }
         }
