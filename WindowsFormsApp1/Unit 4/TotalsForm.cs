@@ -17,7 +17,12 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void backForm_Click(object sender, EventArgs e)
+        public TotalsForm(int totalnum, int oxfordnum, int cambridgenum, int leedsnum, decimal totalbill, decimal oxfordnumbill, decimal cambridgenumbill, decimal leedsnumbill)
+        {
+            
+        }
+
+        private void selectBack(object sender, EventArgs e)
         {
             this.Close();
         }

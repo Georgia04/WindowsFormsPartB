@@ -34,8 +34,8 @@ namespace WindowsFormsApp1
             //Application.Run(new TipsterForm());
             //Application.Run(new ResultsForm());
             //Application.Run(new DataEntryForm2());
-            //Application.Run(new CheckBillForm());
-            //Application.Run(new TotalsForm());
+            Application.Run(new CheckBillForm());
+            Application.Run(new TotalsForm());
             //Application.Run(new CalculatorForm2());
         }
     }

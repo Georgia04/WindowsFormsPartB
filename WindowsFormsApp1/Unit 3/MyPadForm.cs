@@ -58,19 +58,19 @@ namespace WindowsFormsApp1
             textMain.LoadFile(ofd.FileName);
         }
 
-        private void fontToolStripMenuItem_Click(object sender, EventArgs e)
+        private void chooseFontTool(object sender, EventArgs e)
         {
             fd.ShowDialog();
             textMain.Font = fd.Font;
         }
 
-        private void foreColourToolStripMenuItem_Click(object sender, EventArgs e)
+        private void chooseForeColor(object sender, EventArgs e)
         {
             cd.ShowDialog();
             textMain.ForeColor = cd.Color;
         }
 
-        private void backColourToolStripMenuItem_Click(object sender, EventArgs e)
+        private void chooseBckColor(object sender, EventArgs e)
         {
             cd.ShowDialog();
             textMain.BackColor = cd.Color;

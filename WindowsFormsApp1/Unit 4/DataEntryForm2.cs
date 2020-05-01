@@ -10,15 +10,21 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
+    /// <summary>
+    /// This form asks the user to put their details 
+    /// for the participation
+    /// Author: Georgia
+    /// </summary>
     public partial class DataEntryForm2 : Form
     {
-        public int lunchOption, dinnerOption, university;
-        public string name;
-        public double total1, total2, total3;
-        public int totalBill1, totalBill2, totalBill3, totalAll;
-        public string universityName;
-        
-        
+        private double billTotal = 50;
+        public static int oxfordnum= 0;
+        public static int cambridgenum = 0;
+        public static int leedsnum = 0;
+        public static decimal oxfordnumbill = 0;
+        public static decimal cambridgenumbill = 0;
+        public static decimal leedsnumbill = 0;
+
         public DataEntryForm2()
         {
             InitializeComponent();
@@ -30,27 +36,53 @@ namespace WindowsFormsApp1
             Application.Exit();
         }
 
-        private void billForm_Click(object sender, EventArgs e)
+        private void showBill(object sender, EventArgs e)
         {
             CheckBillForm billForm = new CheckBillForm();
-            billForm.firstnameBox.Text = this.nameBox.Text;
-            billForm.universityBox.Text = this.universityCombo.Text;
+            string[] universities = new string[] { "University of Oxford", "University of Cambridge", "University of Leeds" };
+            if (nameBox.Text == "")
+            {
+                MessageBox.Show("Please Enter a Name!", "Data Entry Error");
+            }
+
+            billTotal = 50;
+            if (radioDinner.Checked && radioLunch.Checked)
+            {
+                billTotal = billTotal + 25;
+            }
+            else if (radioDinner.Checked)
+            {
+                billTotal= billTotal + 15;
+            }
+            else if (radioLunch.Checked)
+            {
+                billTotal = billTotal + 10;
+            }
+
+            billForm.firstnameBox.Text = nameBox.Text;
+            billForm.universityBox.Text = universities[universityCombo.SelectedIndex];
+            billForm.BillTotal.Text = billTotal.ToString();
 
             if (radioDinner.Checked == true)
             {
                 billForm.selectOption.Text = "Dinner Selected";
                 billForm.selectOption.Visible = true;
             }
-            else if (radioLunch.Checked == true) 
+            else if (radioLunch.Checked == true)
             {
                 billForm.selectOption.Text = "Lunch Selected";
                 billForm.selectOption.Visible = true;
             }
+
             billForm.Show();
-            
-            
-            
-     
+        }
+
+        private void showTotal(object sender, EventArgs e)
+        {
+            int totalnum = oxfordnum + cambridgenum + leedsnum;
+            decimal totalbill = oxfordnumbill + cambridgenumbill + leedsnumbill;
+            TotalsForm totals  = new TotalsForm (totalnum, oxfordnum, cambridgenum, leedsnum, totalbill, oxfordnumbill, cambridgenumbill, leedsnumbill);
+            totals.Show();
         }
     }
 }

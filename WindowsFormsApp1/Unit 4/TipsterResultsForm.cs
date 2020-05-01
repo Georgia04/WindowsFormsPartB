@@ -21,23 +21,6 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void resultsForm_Load(object sender, EventArgs e)
-        {
-            double n1, n2, answer;
-
-            try 
-            {
-                n1 = Convert.ToDouble(totalBill.Text);
-                n2 = Convert.ToDouble(peopleNumber.Text);
-                answer = n1/n2;
-                eachPays.Text = answer.ToString();
-            }
-            catch
-            {
-                MessageBox.Show("Error in Data Entry");
-            }
-        }
-
         private void closeForm_Click(object sender, EventArgs e)
         {
             Close();

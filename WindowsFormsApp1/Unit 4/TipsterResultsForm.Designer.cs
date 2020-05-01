@@ -130,7 +130,6 @@
             this.Controls.Add(this.billdetailsBox);
             this.Name = "ResultsForm";
             this.Text = "Results";
-            this.Load += new System.EventHandler(this.resultsForm_Load);
             this.billdetailsBox.ResumeLayout(false);
             this.billdetailsBox.PerformLayout();
             this.ResumeLayout(false);

@@ -106,7 +106,7 @@
             this.billForm.TabIndex = 9;
             this.billForm.Text = "Check Bill";
             this.billForm.UseVisualStyleBackColor = false;
-            this.billForm.Click += new System.EventHandler(this.billForm_Click);
+            this.billForm.Click += new System.EventHandler(this.showBill);
             // 
             // totalsForm
             // 
@@ -118,6 +118,7 @@
             this.totalsForm.TabIndex = 10;
             this.totalsForm.Text = "Totals";
             this.totalsForm.UseVisualStyleBackColor = false;
+            this.totalsForm.Click += new System.EventHandler(this.showTotal);
             // 
             // radioDinner
             // 

@@ -93,6 +93,7 @@
             this.listPeople.Name = "listPeople";
             this.listPeople.Size = new System.Drawing.Size(88, 82);
             this.listPeople.TabIndex = 3;
+            this.listPeople.SelectedIndexChanged += new System.EventHandler(this.listPeople_SelectedIndexChanged);
             // 
             // calculateForm
             // 
@@ -147,12 +148,12 @@
             this.madRadio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.madRadio.Location = new System.Drawing.Point(173, 92);
             this.madRadio.Name = "madRadio";
-            this.madRadio.Size = new System.Drawing.Size(82, 33);
+            this.madRadio.Size = new System.Drawing.Size(81, 33);
             this.madRadio.TabIndex = 3;
             this.madRadio.TabStop = true;
-            this.madRadio.Text = "40%";
+            this.madRadio.Text = "mad";
             this.madRadio.UseVisualStyleBackColor = true;
-            this.madRadio.CheckedChanged += new System.EventHandler(this.madRadio_CheckedChanged);
+            this.madRadio.CheckedChanged += new System.EventHandler(this.selectMadRadio);
             // 
             // generousRadio
             // 
@@ -165,7 +166,7 @@
             this.generousRadio.TabStop = true;
             this.generousRadio.Text = "generous";
             this.generousRadio.UseVisualStyleBackColor = true;
-            this.generousRadio.CheckedChanged += new System.EventHandler(this.generousRadio_CheckedChanged);
+            this.generousRadio.CheckedChanged += new System.EventHandler(this.selectGenerousRadio);
             // 
             // normalRadio
             // 
@@ -176,9 +177,9 @@
             this.normalRadio.Size = new System.Drawing.Size(82, 33);
             this.normalRadio.TabIndex = 1;
             this.normalRadio.TabStop = true;
-            this.normalRadio.Text = "10%";
+            this.normalRadio.Text = "30%";
             this.normalRadio.UseVisualStyleBackColor = true;
-            this.normalRadio.CheckedChanged += new System.EventHandler(this.normalRadio_CheckedChanged);
+            this.normalRadio.CheckedChanged += new System.EventHandler(this.selectNormalRadio);
             // 
             // noneRadio
             // 
@@ -191,7 +192,7 @@
             this.noneRadio.TabStop = true;
             this.noneRadio.Text = "None";
             this.noneRadio.UseVisualStyleBackColor = true;
-            this.noneRadio.CheckedChanged += new System.EventHandler(this.noneRadio_CheckedChanged);
+            this.noneRadio.CheckedChanged += new System.EventHandler(this.selectNoneRadio);
             // 
             // TipsterForm
             // 
@@ -209,7 +210,7 @@
             this.Controls.Add(this.billLabel);
             this.Name = "TipsterForm";
             this.Text = "Georgia\'s Tipster Bill";
-            this.Load += new System.EventHandler(this.TipsterForm_Load);
+            this.Load += new System.EventHandler(this.tipsterForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tipBox.ResumeLayout(false);
             this.tipBox.PerformLayout();

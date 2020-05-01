@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.backForm = new System.Windows.Forms.Button();
+            this.totalBill = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // backForm
@@ -40,7 +41,16 @@
             this.backForm.TabIndex = 0;
             this.backForm.Text = "Back";
             this.backForm.UseVisualStyleBackColor = true;
-            this.backForm.Click += new System.EventHandler(this.backForm_Click);
+            this.backForm.Click += new System.EventHandler(this.selectBack);
+            // 
+            // totalBill
+            // 
+            this.totalBill.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.totalBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.totalBill.Location = new System.Drawing.Point(50, 53);
+            this.totalBill.Name = "totalBill";
+            this.totalBill.Size = new System.Drawing.Size(162, 60);
+            this.totalBill.TabIndex = 1;
             // 
             // TotalsForm
             // 
@@ -48,6 +58,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(858, 539);
+            this.Controls.Add(this.totalBill);
             this.Controls.Add(this.backForm);
             this.Name = "TotalsForm";
             this.Text = "TotalsForm";
@@ -58,5 +69,6 @@
         #endregion
 
         private System.Windows.Forms.Button backForm;
+        public System.Windows.Forms.Label totalBill;
     }
 }

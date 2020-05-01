@@ -18,21 +18,17 @@ namespace WindowsFormsApp1
     /// </summary>
     public partial class TipsterForm : Form
     {
+     
+        private double billNumber, peopleNumber, answer;
+        private double tipFee = 0.00;
         public TipsterForm()
         {
             InitializeComponent();
         }
 
-        private void calculateForm_Click(object sender, EventArgs e)
+        private void tipsterForm_Load(object sender, EventArgs e)
         {
-            Convert.ToString(textBill.Text);
-            Convert.ToString(listPeople.Text);
-            ResultsForm Results = new ResultsForm();
-            Results.peopleNumber.Text = listPeople.Text;
-            Results.totalBill.Text = textBill.Text;
-            this.listPeople.Text = "";
-            this.textBill.Focus();
-            Results.Show();
+            MessageBox.Show("Enter a bill Amount", "Enter Bill");
         }
 
         private void quitForm_Click(object sender, EventArgs e)
@@ -40,49 +36,50 @@ namespace WindowsFormsApp1
             Application.Exit();
         }
 
-        private void noneRadio_CheckedChanged(object sender, EventArgs e)
+        private void selectNoneRadio(object sender, EventArgs e)
         {
-            Convert.ToDouble(textBill.Text);
-            double newtotal, billnum;
-            billnum = Convert.ToDouble(textBill.Text);
-            newtotal = billnum * 0.00;
-            newtotal = newtotal + billnum;
-            textBill.Text = newtotal.ToString();
+            tipFee = 0.0;
         }
 
-        private void normalRadio_CheckedChanged(object sender, EventArgs e)
+        private void selectNormalRadio(object sender, EventArgs e)
         {
-            Convert.ToDouble(textBill.Text);
-            double newtotal, billnum;
-            billnum = Convert.ToDouble(textBill.Text);
-            newtotal = billnum * 0.10;
-            newtotal = newtotal + billnum;
-            textBill.Text = newtotal.ToString();
+            tipFee = 0.3;
         }
 
-        private void generousRadio_CheckedChanged(object sender, EventArgs e)
+        private void selectGenerousRadio(object sender, EventArgs e)
         {
-            Convert.ToDouble(textBill.Text);
-            double newtotal, billnum;
-            billnum = Convert.ToDouble(textBill.Text);
-            newtotal = billnum * 0.20;
-            newtotal = newtotal + billnum;
-            textBill.Text = newtotal.ToString();
+            tipFee = 0.15;
         }
 
-        private void madRadio_CheckedChanged(object sender, EventArgs e)
+        private void selectMadRadio(object sender, EventArgs e)
         {
-            Convert.ToDouble(textBill.Text);
-            double newtotal, billnum;
-            billnum = Convert.ToDouble(textBill.Text);
-            newtotal = billnum * 0.40;
-            newtotal = newtotal + billnum;
-            textBill.Text = newtotal.ToString();
+            tipFee = 0.2;
         }
 
-        private void TipsterForm_Load(object sender, EventArgs e)
+        private void listPeople_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            peopleNumber = listPeople.SelectedIndex + 1;
         }
+
+        private void calculateForm_Click(object sender, EventArgs e) 
+       {
+         ResultsForm Results = new ResultsForm();
+         Results.peopleNumber.Text = listPeople.Text.ToString();
+         Results.totalBill.Text = textBill.Text;
+
+          try
+          {
+          billNumber = Convert.ToDouble(textBill.Text);
+          billNumber = billNumber * (1 + tipFee);
+          answer = billNumber / peopleNumber;
+          }
+          catch
+          {
+           MessageBox.Show("Error in Data Entry");
+          }
+                Results.totalBill.Text = billNumber.ToString();
+                Results.eachPays.Text = answer.ToString();
+                Results.Show();
+        }        
     }
 }

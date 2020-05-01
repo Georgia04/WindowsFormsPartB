@@ -167,29 +167,25 @@
             this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
             this.fontToolStripMenuItem.Size = new System.Drawing.Size(219, 26);
             this.fontToolStripMenuItem.Text = "Font";
-            this.fontToolStripMenuItem.Click += new System.EventHandler(this.fontToolStripMenuItem_Click);
+            this.fontToolStripMenuItem.Click += new System.EventHandler(this.chooseFontTool);
             // 
             // backgroundColourToolStripMenuItem
             // 
             this.backgroundColourToolStripMenuItem.Name = "backgroundColourToolStripMenuItem";
             this.backgroundColourToolStripMenuItem.Size = new System.Drawing.Size(219, 26);
             this.backgroundColourToolStripMenuItem.Text = "Background Colour";
-            this.backgroundColourToolStripMenuItem.Click += new System.EventHandler(this.backColourToolStripMenuItem_Click);
+            this.backgroundColourToolStripMenuItem.Click += new System.EventHandler(this.chooseBckColor);
             // 
             // foregroundColourToolStripMenuItem
             // 
             this.foregroundColourToolStripMenuItem.Name = "foregroundColourToolStripMenuItem";
             this.foregroundColourToolStripMenuItem.Size = new System.Drawing.Size(219, 26);
             this.foregroundColourToolStripMenuItem.Text = "Foreground Colour";
-            this.foregroundColourToolStripMenuItem.Click += new System.EventHandler(this.foreColourToolStripMenuItem_Click);
+            this.foregroundColourToolStripMenuItem.Click += new System.EventHandler(this.chooseForeColor);
             // 
             // ofd
             // 
             this.ofd.FileName = "openFileDialog1";
-            // 
-            // fd
-            // 
-           
             // 
             // cd
             // 
@@ -215,6 +211,7 @@
             this.font.Size = new System.Drawing.Size(89, 24);
             this.font.TabIndex = 3;
             this.font.Text = "Font Size";
+            this.font.Click += new System.EventHandler(this.font_Click);
             // 
             // MyPadForm
             // 
@@ -228,7 +225,6 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MyPadForm";
             this.Text = "Georgia\'s Pad";
-            
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

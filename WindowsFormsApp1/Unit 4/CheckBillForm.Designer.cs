@@ -36,6 +36,9 @@
             this.universityBox = new System.Windows.Forms.TextBox();
             this.selectOption = new System.Windows.Forms.Label();
             this.selectedLabel = new System.Windows.Forms.Label();
+            this.BillTotal = new System.Windows.Forms.Label();
+            this.BillLabel = new System.Windows.Forms.Label();
+            this.acceptBill = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // backForm
@@ -48,7 +51,7 @@
             this.backForm.TabIndex = 0;
             this.backForm.Text = "Back";
             this.backForm.UseVisualStyleBackColor = false;
-            this.backForm.Click += new System.EventHandler(this.backForm_Click);
+            this.backForm.Click += new System.EventHandler(this.selectBack);
             // 
             // firstnameLabel
             // 
@@ -104,6 +107,36 @@
             this.selectedLabel.TabIndex = 16;
             this.selectedLabel.Text = "Selected Option:";
             // 
+            // BillTotal
+            // 
+            this.BillTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.BillTotal.Location = new System.Drawing.Point(168, 289);
+            this.BillTotal.Name = "BillTotal";
+            this.BillTotal.Size = new System.Drawing.Size(147, 47);
+            this.BillTotal.TabIndex = 17;
+            // 
+            // BillLabel
+            // 
+            this.BillLabel.BackColor = System.Drawing.Color.Orange;
+            this.BillLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.BillLabel.Location = new System.Drawing.Point(22, 289);
+            this.BillLabel.Name = "BillLabel";
+            this.BillLabel.Size = new System.Drawing.Size(107, 38);
+            this.BillLabel.TabIndex = 18;
+            this.BillLabel.Text = "Bill:";
+            // 
+            // acceptBill
+            // 
+            this.acceptBill.BackColor = System.Drawing.Color.Orange;
+            this.acceptBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.acceptBill.Location = new System.Drawing.Point(27, 473);
+            this.acceptBill.Name = "acceptBill";
+            this.acceptBill.Size = new System.Drawing.Size(168, 46);
+            this.acceptBill.TabIndex = 19;
+            this.acceptBill.Text = "Accept Bill";
+            this.acceptBill.UseVisualStyleBackColor = false;
+            this.acceptBill.Click += new System.EventHandler(this.acceptBill_Click);
+            // 
             // CheckBillForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -111,6 +144,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(854, 555);
+            this.Controls.Add(this.acceptBill);
+            this.Controls.Add(this.BillLabel);
+            this.Controls.Add(this.BillTotal);
             this.Controls.Add(this.selectedLabel);
             this.Controls.Add(this.selectOption);
             this.Controls.Add(this.universityBox);
@@ -134,5 +170,8 @@
         public System.Windows.Forms.TextBox universityBox;
         public System.Windows.Forms.Label selectOption;
         private System.Windows.Forms.Label selectedLabel;
+        public System.Windows.Forms.Label BillTotal;
+        private System.Windows.Forms.Label BillLabel;
+        private System.Windows.Forms.Button acceptBill;
     }
 }
